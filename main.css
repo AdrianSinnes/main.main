@@ -40,6 +40,44 @@ header{
 
 
 
+.image-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.PictureFrontPage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 5em;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: absolute;
+    top: 1%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+h2{
+font-weight: bold;
+padding-left: 5%;
+padding-right: 5%;
+font-size: 3em;
+position: absolute;
+top: 30%;
+left: 0%;
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+
+
 
 
 
