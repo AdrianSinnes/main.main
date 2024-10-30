@@ -7,6 +7,7 @@ header{
     text-align: center;
     background-color: #3A5F88;
     color: white;
+    z-index: 1;
 }
 .topnav {
     background-color: #3A5F88;
@@ -54,25 +55,26 @@ header{
 
 h1 {
     font-weight: bolder;
-    font-size: 5em;
+    font-size: min(5em, 8vw);
     padding-left: 5%;
     padding-right: 5%;
     position: absolute;
     top: 10%;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    z-index: 2;
 }
 
 h2{
 font-weight: bold;
 padding-left: 5%;
 padding-right: 5%;
-font-size: 3em;
+font-size: min(3em, 5vw);
 position: absolute;
-top: 40%;
-left: 0%;
+top: 45%;
 color: white;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+z-index: 2;
 }
 
 
