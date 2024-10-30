@@ -5,11 +5,11 @@ body {
 header{
     font-family: sans-serif;
     text-align: center;
-    background-color: rgb(0, 0, 187);
+    background-color: #3A5F88;
     color: white;
 }
 .topnav {
-    background-color: rgb(0, 0, 187);
+    background-color: #3A5F88;
     overflow: hidden;
   }
   .topnav a{
@@ -25,7 +25,7 @@ header{
     color: black;
   }
   .topnav a.active {
-    background-color: rgb(0, 0, 221);
+    background-color: #537dad;
     color: black;
   }
   .OsloMetLogo {
