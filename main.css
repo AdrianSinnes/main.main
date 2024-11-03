@@ -130,16 +130,16 @@ article {
 /* Styling for the secondary box with width, height, background, and padding */
 .secondary-box {
     width: 25%; 
-    height: 200px;
-    background-color: lightgreen; 
+    height: 900px;
+    background-color: rgb(255, 255, 255); 
     padding: 20px; 
 }
 
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
     width: 75%; 
-    height: 200px; 
-    background-color: lightblue;
+    height: 900px; 
+    background-color: #3A5F88;
     padding: 20px; 
 }
 
@@ -155,10 +155,44 @@ article {
 }
 
 
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.box {
+    background-color: #e6e8ea;
+    padding: 1em;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.box label {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+/* Hides checkbox */
+.box input {
+    display: none; 
+    
+}
+.box .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #333;
+    padding-top: 10px;
+    
+}
 
-
-
+.box input:checked ~ .content {
+    max-height: 100px; 
+}
 
 
 
