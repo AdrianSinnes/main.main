@@ -55,7 +55,7 @@ h1 {
     padding-right: 5%;
     top: 0;
     left: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     position: absolute;
     white-space: normal;
 }
@@ -68,7 +68,7 @@ h2 {
     padding-left: 5%;
     padding-right: 5%;
     font-size: clamp(2.5em, 6vw, 3.5em); 
-    color: white;
+    color: rgb(255, 255, 255);
     position: absolute;
     white-space: normal;
 }
@@ -131,15 +131,16 @@ article {
 .secondary-box {
     width: 25%; 
     height: 900px;
-    background-color: rgb(255, 255, 255); 
+    background-color:#cfcfcf; 
     padding: 20px; 
+    border-radius: 20px;
 }
 
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
     width: 75%; 
     height: 900px; 
-    background-color: #3A5F88;
+    background-color: #ffffff;
     padding: 20px; 
 }
 
@@ -164,7 +165,7 @@ article {
     margin: 0 auto;
 }
 .box {
-    background-color: #e6e8ea;
+    background-color: #3A5F88;
     padding: 1em;
     border-radius: 5px;
     overflow: hidden;
@@ -245,6 +246,13 @@ article {
     background-color: #3A5F88;
     color: #000000;
 }
+.OsloMetLogoFooter{
+    background-color:#3a5f88 ;
+    margin-left: 2.5%;
+    width: 200px;
+    height: auto;
+    margin-bottom: 5%;
+}
 .footer-container{
     max-width: 100%;
     margin: auto;
@@ -309,4 +317,17 @@ padding: 10px 100px 10px 0px;
 text-decoration: none;
 color: rgb(0, 0, 0);
 margin-top: 20px;
+}
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        flex-direction: column;
+        }
+    }
+@media(max-width:574px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
