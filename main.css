@@ -253,6 +253,15 @@ article {
     height: auto;
     margin-bottom: 5%;
 }
+.nyhetsbrevButton{
+float: right;
+margin-top: 2%;
+margin-right: 15%;
+padding: 2%;
+background-color: #000000;
+text-decoration: none;
+color: #fff;
+}
 .footer-container{
     max-width: 100%;
     margin: auto;
