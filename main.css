@@ -131,16 +131,15 @@ article {
 .secondary-box {
     width: 25%; 
     height: 900px;
-    background-color:#cfcfcf; 
+    background-color: rgb(255, 255, 255); 
     padding: 20px; 
-    border-radius: 20px;
 }
 
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
     width: 75%; 
     height: 900px; 
-    background-color: #ffffff;
+    background-color: #3A5F88;
     padding: 20px; 
 }
 
@@ -165,7 +164,7 @@ article {
     margin: 0 auto;
 }
 .box {
-    background-color: #3A5F88;
+    background-color: #e6e8ea;
     padding: 1em;
     border-radius: 5px;
     overflow: hidden;
