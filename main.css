@@ -1,6 +1,4 @@
-body {
-    margin: 0
-}
+/* css for header */
 header{
     font-family: sans-serif;
     text-align: center;
@@ -46,6 +44,15 @@ header{
     overflow: hidden;
 }
 
+/* css for body */
+p, h1, h2{
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0
+}
+
 /* Style for h1, size, position and color */
 h1 {
     font-weight: bolder;
@@ -85,17 +92,6 @@ h2 {
     }
 }
 
-/* Adjustment of font size and position at a maximum width of 600px */
-@media (max-width: 600px) {
-    h1 {
-        font-size: clamp(1.8em, 4vw, 3em);
-        top: 0;
-    }
-    h2 {
-        font-size: clamp(1.5em, 3vw, 2em);
-        top: 4em;
-    }
-}
 
 /* Adjustment of font size and position at a maximum width of 400px */
 @media (max-width: 400px) {
@@ -129,22 +125,22 @@ article {
 
 /* Styling for the secondary box with width, height, background, and padding */
 .secondary-box {
-    width: 25%; 
-    height: 900px;
+    width: 20%; 
+    height: auto;
     background-color: rgb(255, 255, 255); 
     padding: 20px; 
 }
 
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
-    width: 75%; 
-    height: 900px; 
+    width: 80%; 
+    height: auto; 
     background-color: #3A5F88;
     padding: 20px; 
 }
 
 /* Media query for mobile */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     article {
         flex-direction: column; 
     }
@@ -154,6 +150,11 @@ article {
     }  
 }
 
+.accordion-container{
+display: grid;
+grid-template-columns: 700px 700px;
+gap: 2.5em;
+}
 
 input {
     display: none;
@@ -178,12 +179,11 @@ label:hover {
 }
 
 .content {
-    background: #E2E5F6;
+    background: #ffffff;
     border: 1px solid #A7A7A7;
     padding-top: 1em;
     padding-left: 1em;
     padding-bottom: 1em;
-    margin: 0 0 1px 0;
     border-radius: 3px;
 }
 
@@ -199,13 +199,92 @@ input:checked + label + .content {
     box-sizing: border-box;
   }
   
-  .box {
-    float: left;
-    width: 50%; 
-    padding: 50px;
+  .box{
+padding-bottom: 3em;
   }
 
+  @media (max-width: 1850px) {
+    .accordion-container {
+      display: grid;
+      grid-template-columns: 1fr; 
+    }
+  }
 
+  @media (max-width: 1200px) {
+    .accordion-container {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 1em; 
+    }    
+  }
+  
+  @media (max-width: 900px) {
+    .accordion-container {
+      grid-template-columns: 1fr;
+      gap: 2em; 
+    }
+  
+    label {
+      padding-left: 0.5em; 
+    }
+  
+    .content {
+      padding-left: 1em; 
+    }
+  }
+
+  h4{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  /* Media querrys */
+  @media (max-width: 600px) {
+    .accordion-container {
+      grid-template-columns: 1fr; 
+      gap: 1.5em;
+    }
+/* Adjustment of font size and position for h1 and h2 at a maximum width of 600px */
+    h1 {
+        font-size: clamp(1.8em, 4vw, 3em);
+        top: 0;
+    }
+    h2 {
+        font-size: clamp(1.5em, 3vw, 2em);
+        top: 4em;
+    }
+
+  
+    label {
+      font-size: 16px; 
+      padding-left: 0.3em;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+  
+    .content {
+      padding-left: 0.5em; 
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .accordion-container {
+      grid-template-columns: 1fr; 
+      gap: 1em; 
+    }
+  
+    label {
+      font-size: 14px; 
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  
+    .content {
+      padding-left: 0.5em; 
+      font-size: 14px; 
+    }
+  }
+  
 
 
 
@@ -246,7 +325,7 @@ input:checked + label + .content {
 
 
 
-
+/*css for footer */
 
 /* Adrian linje 90 */
 .footer{
