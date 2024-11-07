@@ -152,7 +152,7 @@ article {
 
 .accordion-container{
 display: grid;
-grid-template-columns: 700px 700px;
+grid-template-columns: 525px 525px;
 gap: 2.5em;
 }
 
@@ -203,7 +203,7 @@ input:checked + label + .content {
 padding-bottom: 3em;
   }
 
-  @media (max-width: 1850px) {
+  @media (max-width: 1400px) {
     .accordion-container {
       display: grid;
       grid-template-columns: 1fr; 
