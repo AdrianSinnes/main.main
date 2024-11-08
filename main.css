@@ -287,26 +287,6 @@ padding-bottom: 3em;
       font-size: 14px; 
     }
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -449,8 +429,72 @@ margin-bottom: 10px;
 
 
 
+  /* Container for the link boxes */
+  .interest-container {
+    display: grid;
+    justify-content: center;
+  }
+  
+  /* creates 3 colons so the boxes will stay 3x3x3, also ajusting the gap between the boxes */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5em;
+  }
+  
+  /* ajust the style and size for the boxes */
+  .linkbox {
+    width: 300px;
+    display: block;
+    padding: 1em;
+    background-color: #54677d;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    text-align: left;
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* applies a subtle box shadow effect when the user hovers over a link box */
+  .linkbox:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* slightly reduces the size of the link box when clicked */
+  .linkbox:active {
+    transform: scale(0.98);
+  }
+
+  /* For medium-sized screens, switch to 2 columns */
+@media (max-width: 900px) {
+    .interest-container .grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+  
+  /* For even smaller screen, switch to 1 column, also changing the gap and the box size*/
+  @media (max-width: 700px) {
+    .interest-container .grid {
+      grid-template-columns: 1fr; /* 1 column */
+    }
+    .linkbox {
+      width: 500px
+    }
+
+    .grid {
+        gap: 2.5em;
+    }
+  }
 
 
+  /* For small screen changing the width of the box */
+  @media (max-width: 574px) {
+    
+    .linkbox {
+      width: 400px
+    }
+  }
 
 
 
