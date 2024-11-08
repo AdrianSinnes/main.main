@@ -84,7 +84,7 @@ h2 {
 }
 
 /* Adjustment of font size and position at a maximum width of 800px */
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     h1 {
         font-size: clamp(3em, 6vw, 4em);
         top: 0;
@@ -97,7 +97,7 @@ h2 {
 
 
 /* Adjustment of font size and position at a maximum width of 400px */
-@media (max-width: 400px) {
+@media (max-width: 574px) {
     h1 {
         font-size: clamp(1.5em, 2.5vw, 2em);
         top: 0;
@@ -242,7 +242,7 @@ padding-bottom: 3em;
   }
 
   /* Media querrys */
-  @media (max-width: 600px) {
+  @media (max-width: 767px) {
     .accordion-container {
       grid-template-columns: 1fr; 
       gap: 1.5em;
@@ -270,7 +270,7 @@ padding-bottom: 3em;
     }
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 574px) {
     .accordion-container {
       grid-template-columns: 1fr; 
       gap: 1em; 
@@ -310,14 +310,25 @@ padding-bottom: 3em;
 
 
 
-
+.profile-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    align-items: center; 
+    margin: 0 auto;   
+}
   .profile-section{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    margin: auto;
+    width: 60%;
     padding: 3.5em;
+    margin-right: 60px;
 }
 .job-title{
     font-size:2em;
@@ -326,14 +337,15 @@ padding-bottom: 3em;
     margin:0;
 }
 .profile-section-line{
-    width: 40%;
+    width: 95%;
     border-top: 1px solid #000;
     margin:5px 0;
 }
-.profile-container{
+.profile-content{
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .profile-image{
     width: auto;
@@ -363,6 +375,75 @@ padding-bottom: 3em;
     margin-top: 2px;
     font-size: 1em;
     color: #000000;
+}
+.contact-section{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+width: 40%;
+}
+.profile-section-line{
+font-size: 2.5em;
+font-weight:200;
+color: #000000;
+line-height: 1.5;
+margin: 0;
+margin-bottom: 10px;
+}
+.contact-link{
+    font-size: 1.3em;
+    color: #000000;
+    text-decoration: underline; 
+}
+
+/* Juster layouten for mobil */
+@media (max-width: 767px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .profile-section {
+        width: 100%;
+        padding: 1.5em; 
+        margin-right: 0;  
+    }
+
+    .contact-section {
+        width: 100%;
+        padding: 1.5em; 
+        margin-top: 20px; 
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+    .section-heading {
+        font-size: 1.5em; 
+    }
+    .contact-link {
+        font-size: 1em; 
+    }
+}
+
+/* ekstra små skjermer */
+@media (max-width: 574px) {
+    .profile-section, .contact-section {
+        padding: 1em;  
+    }
+    .section-heading {
+        font-size: 1.25em;
+    }
+    .contact-link {
+        font-size: 0.9em;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px; 
+    }
 }
 
 
