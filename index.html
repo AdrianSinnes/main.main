@@ -11,8 +11,8 @@
 <body>
     <header> <!-- Dette er linje 10-->
         <nav class = "topnav">
-            <ul>
-                <li><img src ="images/OsloMetLogo.png" class = "OsloMetLogo" width = "10%"></li>
+            <ul class="topnav-list">
+                <li><img src ="images/oslomet-logo.png" class = "OsloMet Logoen" width = "10%"></li>
                 <li><a href="index.html" class = "active">MatMod</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
                 <li><a href="github.html">Github</a></li>
@@ -33,7 +33,7 @@
     
     <!-- Front page picture. H1 and H2 is the title -->
     <div class="Header-container">
-        <img src="images/MainPagePictrure.png" alt="Hoved BIlde" class="PictureFrontPage">
+        <img src="images/main-page-pictrure.png" alt="Hoved Bilde" class="PictureFrontPage">
         
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
         <h2>Bachelorprogram</h2>
@@ -77,11 +77,10 @@
     
     <!-- Accordion boxes, inside the main box of the website. Found the code here "https://supfort.com/pure-css-accordion-without-javascript" -->
     <div class="main-box">
-
-      <div class="accordion-container">
-  <div class="box">
-    <input type="checkbox" id="title1" />
-    <label for="title1">Opptakskrav og poeng</label>
+     <div class="accordion-container">
+        <div class="box">
+        <input type="checkbox" id="title1" />
+        <label for="title1">Opptakskrav og poeng</label>
     <div class="content">
       <p>For å søke på dette programmet må du ha.</p>
       <br>
@@ -208,14 +207,24 @@
 </div>
         
         
+        </div>
+    </div>            
+    </article>
+</main>
+            
+    <div class ="profile-section">
+        <h4 class ="job-title">Faglig leder</h4>
+         <hr class ="profile-section-line">
+         <div class="profile-container">
+            <img src="images/fagligleder.png" alt="Bilde av Kristoffer Herland Hellton"class ="profile-image">
+            <div class ="profile-info">
+                <p class ="full-name">Kristoffer Herland Hellton</p>
+                <p class ="job-position">Førsteamuensis</p>
+                <p class ="contact-info">+47 672 37 240 | Kristoffer.hellton@oslomet.no</p>
+            </div>
+        </div>
+        <hr class ="profile-section-line">
     </div>
-                </div>
-            </article>
-        </main>
-
-        <h4>Faglig leder</h4>
-        <hr>
-
 
 
 
@@ -279,7 +288,8 @@
 
 
 
-</body> <!-- Dette er linje 100--> 
+</body> 
+<!--Here starts the footer--> 
 <footer class = "footer">
     <div class = "nyhetsbrev">
         <h6>Hold deg oppdatert på hva som skjer på OsloMet.</h6>
@@ -295,7 +305,7 @@
     </div>
     <div class = "footer-row">
         <div class ="footer-col">
-            <a href="https://www.oslomet.no/"><img src ="images/OsloMetLogo.png" class = "oslomet-logo-footer"></a> 
+            <a href="https://www.oslomet.no/"><img src ="images/oslomet-logo.png" class = "oslomet-logo-footer"></a> 
             <ul>
                 <li>Postboks 4, st  Olavs Plass</li>
                 <li>0130 Oslo</li>

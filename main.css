@@ -27,6 +27,9 @@ header{
     background-color: #537dad;
     color: white;
   }
+  .topnav-list{
+    list-style-type:none;
+  }
 .OsloMetLogo {
     float: left;
     margin-right: 2.5%;
@@ -297,7 +300,70 @@ padding-bottom: 3em;
 
 
 
-/* Jørgen linje 60 */
+
+
+
+
+
+
+
+
+
+
+
+  .profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: auto;
+    padding: 3.5em;
+}
+.job-title{
+    font-size:2em;
+    font-weight: bold;
+    color: #000;
+    margin:0;
+}
+.profile-section-line{
+    width: 40%;
+    border-top: 1px solid #000;
+    margin:5px 0;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-image{
+    width: auto;
+    height: 175px;
+    border-radius: 5%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.full-name{
+    font-size:1.75em ;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0;
+}
+.job-position {
+    font-size: 1.15em;
+    color: #666;
+   margin-bottom: 2px;
+}
+
+.contact-info {
+    margin-top: 2px;
+    font-size: 1em;
+    color: #000000;
+}
 
 
 
@@ -326,8 +392,6 @@ padding-bottom: 3em;
 
 
 /*css for footer */
-
-/* Adrian linje 90 */
 .footer{
     font-size: 1.2em;
     padding: 50px;
