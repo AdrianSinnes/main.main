@@ -436,6 +436,10 @@ margin-bottom: 10px;
     display: grid;
     justify-content: center;
   }
+  h5{
+    text-align: center;
+    font-size:  3em;
+  }
   
   /* creates 3 colons so the boxes will stay 3x3x3, also ajusting the gap between the boxes */
   .grid {
