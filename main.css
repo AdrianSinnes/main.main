@@ -42,16 +42,31 @@ header{
     margin-right: 10px;
 }
 
+
+
+.frontpage-container {
+  position: relative;
+  overflow: hidden;
+}
+
 /* size on frontpage picture */
 .PictureFrontPage {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    display: block;
 }
 
-.Header-container {
-    position: relative;
-    overflow: hidden;
+/* Blue overlay color at the top of the image */
+.gradient{ 
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #3A5F88, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 
 /* css for body */
 p, h1, h2{
@@ -61,8 +76,8 @@ p, h1, h2{
 /* Style for h1, size, position and color */
 h1 {
     font-weight: bolder;
-    font-size: clamp(3.5em, 8vw, 4.5em);
-    max-width: 17em;
+    font-size: 4.5em;
+    max-width: auto;
     padding-left: 5%;
     padding-right: 5%;
     top: 0;
@@ -74,12 +89,12 @@ h1 {
 
 /* Style for h2, size, pisition and color */
 h2 {
-    top: 4.5em;
+    top: 5em;
     left: 0;
     font-weight: bold;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: clamp(2.5em, 6vw, 3.5em); 
+    font-size: 2.5em;
     color: rgb(255, 255, 255);
     position: absolute;
     white-space: normal;
@@ -94,9 +109,6 @@ h2 {
     h2 {
         font-size: clamp(2em, 5vw, 3em);
         top: 5em;
-    }
-    .Header-container{
-      margin-top: 30px;
     }
 }
 
@@ -257,16 +269,16 @@ padding-bottom: 3em;
       grid-template-columns: 1fr; 
       gap: 1.5em;
     }
+  
 /* Adjustment of font size and position for h1 and h2 at a maximum width of 600px */
     h1 {
-        font-size: clamp(1.8em, 4vw, 3em);
+        font-size: 2.5em;
         top: 0;
     }
     h2 {
-        font-size: clamp(1.5em, 3vw, 2em);
+        font-size: 2em;
         top: 4em;
     }
-
   
     label {
       font-size: 16px; 
@@ -297,6 +309,45 @@ padding-bottom: 3em;
       font-size: 14px; 
     }
   }
+
+  @media (max-width: 1050px) {
+    h1 {
+      font-size: 3.5em;
+    }
+    h2{
+      font-size: 2.5em;
+      top: 3.5em;
+    }
+  }
+
+
+  @media (max-width: 850px) {
+    h1 {
+      font-size: 2.5em;
+    }
+    h2{
+      font-size: 2em;
+    }
+  }
+
+  @media (max-width: 580px) {
+    h1 {
+      font-size: 2em;
+    }
+    h2{
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 1.5em;
+    }
+    h2{
+      font-size: 1.2em;
+    }
+  }
+
 
 
 
