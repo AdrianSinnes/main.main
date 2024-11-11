@@ -95,6 +95,9 @@ h2 {
         font-size: clamp(2em, 5vw, 3em);
         top: 5em;
     }
+    .Header-container{
+      margin-top: 30px;
+    }
 }
 
 
@@ -146,7 +149,7 @@ article {
     .secondary-box, .main-box {
         width: 100%;
         height: auto; 
-    }  
+    }
 }
 
 /* Styling for the main box with width, height, background, and padding */
@@ -440,10 +443,6 @@ margin-bottom: 10px;
   .interest-container {
     display: grid;
     justify-content: center;
-  }
-  h5{
-    text-align: center;
-    font-size:  3em;
   }
   
   /* creates 3 colons so the boxes will stay 3x3x3, also ajusting the gap between the boxes */
