@@ -2,7 +2,7 @@
 body {
   margin: 0; 
   font-family: sans-serif, Arial, Helvetica;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   color:#000;
 }
 header{
@@ -118,7 +118,7 @@ p, h1, h2{
 /* Style for h1, size, position and color */
 h1 {
     font-weight: bolder;
-    font-size: 4.5em;
+    font-size: 3.5em;
     max-width: auto;
     padding-left: 5%;
     padding-right: 5%;
@@ -131,7 +131,7 @@ h1 {
 
 /* Style for h2, size, pisition and color */
 h2 {
-    top: 5em;
+    top: 4em;
     left: 0;
     font-weight: bold;
     padding-left: 5%;
@@ -356,9 +356,8 @@ margin-bottom: 10px;
     width: 250px;
     display: block;
     padding: 1em;
-    background-color: #54677d;
-    background-color: #d1ebdb;
-    border: 0.1em solid #ccc;
+    background-color: #ffffff;
+    border: 0.5em solid #d1ebdb;
     border-radius: 0.5em;
     text-align: left;
     font-size: 1em;
@@ -391,10 +390,10 @@ margin-bottom: 10px;
 .container-student {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
-  background-color: #3A5F88;
+  background-color: #d1ebdb;
   gap: 1em; 
   width: 100%;
-  
+  margin-top: 5em;
 }
 
 /* Text section styles */
@@ -411,12 +410,12 @@ margin-bottom: 10px;
 
   font-size: 2rem;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 /* Styling the link to look like a heading */
 .historylink {
   font-size: 1.5rem;
-  color: #b3d0f2; /* Light blue color */
+  color: #3A5F88; /* Light blue color */
   margin-bottom: 20px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -425,12 +424,12 @@ margin-bottom: 10px;
 .text-section p {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 
 .text-section button {
   padding: 2%;
- background-color: rgb(217,217,217);
+  background-color: rgb(217,217,217);
   color: #333;
   border: none;
   cursor: pointer;
@@ -461,7 +460,7 @@ margin-bottom: 10px;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .container-student {
       grid-template-columns: 1fr; /* Stack elements on small screens */
   }
@@ -564,24 +563,9 @@ h6{
 text-decoration: underline;
 }
 
-/*Scaling*/
-@media (max-width: 460px) {
-    h1 {
-      font-size: 1.5em;
-    }
-    h2{
-      font-size: 1.2em;
-    }
-  }
 
 /*scaling 574px*/
 @media (max-width:574px){
-    h1 {
-        font-size: 2em;
-    }
-    h2{
-        font-size: 1.5em;
-    }
 /*accordion container*/
     .accordion-container {
         grid-template-columns: 1fr; 
@@ -631,15 +615,6 @@ text-decoration: underline;
 }
 /*Scaling 767px*/
 @media (max-width: 767px){
-/* Adjustment of font size and position for h1 and h2 */
-    h1 {
-        font-size: 2.5em;
-        top: 0;
-    }
-    h2 {
-        font-size: 2em;
-        top: 4em;
-    }
 /*accordion container*/
     .accordion-container {
         grid-template-columns: 1fr; 
@@ -719,14 +694,6 @@ text-decoration: underline;
     }
   }
 
-  @media (max-width: 850px) {
-    h1 {
-      font-size: 2.5em;
-    }
-    h2{
-      font-size: 2em;
-    }
-}
 @media (max-width: 900px) {
     .accordion-container {
       grid-template-columns: 1fr;
@@ -742,15 +709,6 @@ text-decoration: underline;
     }
   }
   
-  @media (max-width: 1050px) {
-    h1 {
-      font-size: 3.5em;
-    }
-    h2{
-      font-size: 2.5em;
-      top: 3.5em;
-    }
-  }
   /* For medium-sized screens, switch to 2 columns, and change size */
   @media (max-width: 950px) {
     .interest-container .grid {
@@ -837,3 +795,46 @@ text-decoration: underline;
       margin-left: 1em;
     }
   }
+
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 3em;
+    }
+    h2{
+      font-size: 2em;
+    }
+}
+
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2{
+    font-size: 1.5em;
+    margin-top: 1.8em;
+  }
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2{
+    font-size: 1em;
+    margin-top: 3em;
+  }
+}
+
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  h2{
+    font-size: 0.7em;
+    margin-top: 2em;
+  }
+}
