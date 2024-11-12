@@ -330,26 +330,34 @@ margin-bottom: 10px;
     display: grid;
     justify-content: center;
   }
+
+  h5{
+    font-size: 2.5em;
+  }
   
-  /* creates 3 colons so the boxes will stay 3x3x3, also ajusting the gap between the boxes */
+  /* creates 3 colons so the boxes will stay 4x2, also ajusting the gap between the boxes */
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 5em;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 4em;
   }
   
   /* ajust the style and size for the boxes */
   .linkbox {
-    width: 300px;
+    width: 250px;
     display: block;
     padding: 1em;
-    background-color: #54677d;
+    background-color: #d1ebdb;
     border: 0.1em solid #ccc;
     border-radius: 0.5em;
     text-align: left;
     font-size: 1em;
-    color: #ffffff;
+    color: black;
     text-decoration: none;
+  }
+
+  .title-header{
+    font-weight: bold;
   }
   
   /* applies a subtle box shadow effect when the user hovers over a link box */
@@ -511,10 +519,7 @@ text-decoration: underline;
         width: 100px;
         height: 100px; 
     }
-/*interest boxes*/
-    .linkbox {
-        width: 400px
-    }
+
 /*footer*/
     .footer-row{
         flex-direction: column;
@@ -604,19 +609,8 @@ text-decoration: underline;
         width: 100%;
     }
 }
-  /* For even smaller screen, switch to 1 column, also changing the gap and the box size*/
-  @media (max-width: 820px) {
-    .interest-container .grid {
-      grid-template-columns: 1fr; /* 1 column */
-    }
-    .linkbox {
-      width: 500px
-    }
 
-    .grid {
-        gap: 2.5em;
-    }
-  }
+
   @media (max-width: 850px) {
     h1 {
       font-size: 2.5em;
@@ -649,15 +643,7 @@ text-decoration: underline;
       top: 3.5em;
     }
   }
-  /* For medium-sized screens, switch to 2 columns, and change size */
-  @media (max-width: 950px) {
-    .interest-container .grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }
-    .linkbox{
-    width:350px;
-  }
-}
+ 
 /* Media query for mobile */
 @media (max-width: 1100px) {
     article {
@@ -668,15 +654,6 @@ text-decoration: underline;
           height: auto;
       }
   }
-/* For medium-sized screens, switch to 2 columns, and change size */
-  @media (max-width: 1100px) {
-    .interest-container .grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    }
-    .linkbox{
-    width:400px;
-  }
-}
 
   @media (max-width: 1200px) {
     .accordion-container {
@@ -691,3 +668,47 @@ text-decoration: underline;
       grid-template-columns: 1fr; 
     }
   }
+
+  @media (max-width: 1250px){
+    .interest-container .grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    .linkbox{
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 950px){
+    .interest-container .grid{
+      grid-template-columns: 1fr; 
+    }
+    .linkbox{
+      width: 500px;
+      margin-left: 4em;
+    }
+  }
+
+
+  @media (max-width: 600px){
+    .linkbox{
+      width: 400px;
+      margin-left: 3em;
+    }
+  }
+
+
+  @media (max-width: 500px){
+    .linkbox{
+      width: 300px;
+      margin-left: 2em;
+    }
+  }
+
+
+  @media (max-width: 500px){
+    h5{
+      font-size: 2em;
+      margin-left: 1em;
+    }
+  }
+  
