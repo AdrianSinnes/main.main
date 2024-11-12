@@ -362,10 +362,7 @@ padding-bottom: 3em;
     h2{
       font-size: 2em;
     }
-  .frontpage-container{
-    margin-top: 5%;
-  }
-  }
+}
 
   @media (max-width: 580px) {
     h1 {
@@ -374,9 +371,7 @@ padding-bottom: 3em;
     h2{
       font-size: 1.5em;
     }
-    .frontpage-container{
-      margin-top: 7%;
-    }
+   
   }
 
   @media (max-width: 460px) {
@@ -386,9 +381,7 @@ padding-bottom: 3em;
     h2{
       font-size: 1.2em;
     }
-    .frontpage-container{
-      margin-top: 10%;
-    }
+  
   }
 
 
