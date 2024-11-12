@@ -109,22 +109,31 @@ header{
   left: 0;
 }
 
-h1, h2 {
+/* Style for h1, size, position and color */
+h1 {
     font-weight: bolder;
-    color: white;
+    font-size: 4.5em;
+    max-width: auto;
     padding-left: 5%;
     padding-right: 5%;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
     position: absolute;
     white-space: normal;
 }
 
-h1 {
-    font-size: 4.5em;
-}
-
+/* Style for h2, size, pisition and color */
 h2 {
     top: 5em;
+    left: 0;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    white-space: normal;
 }
 
 /* Flexbox layout for the main container to arrange children horizontally */
@@ -651,5 +660,47 @@ text-decoration: underline;
     .accordion-container {
       display: grid;
       grid-template-columns: 1fr; 
+    }
+  }
+  @media (max-width: 1250px){
+    .interest-container .grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    .linkbox{
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 950px){
+    .interest-container .grid{
+      grid-template-columns: 1fr; 
+    }
+    .linkbox{
+      width: 500px;
+      margin-left: 4em;
+    }
+  }
+
+
+  @media (max-width: 600px){
+    .linkbox{
+      width: 400px;
+      margin-left: 3em;
+    }
+  }
+
+
+  @media (max-width: 500px){
+    .linkbox{
+      width: 300px;
+      margin-left: 2em;
+    }
+  }
+
+
+  @media (max-width: 500px){
+    h5{
+      font-size: 2em;
+      margin-left: 1em;
     }
   }
