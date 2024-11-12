@@ -1,4 +1,3 @@
- 
 /* Removes the standard margin */
 body {
   margin: 0; 
@@ -7,6 +6,7 @@ body {
   color:#000;
 }
 header{
+    font-family: sans-serif;
     text-align: center;
     background-color: #3A5F88;
     color: white;
@@ -52,8 +52,8 @@ header{
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
 .dropdown-content {
   display: none;
@@ -74,7 +74,6 @@ header{
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
@@ -82,6 +81,10 @@ header{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.topnav-logo{
+  height: 40px;
+  margin-right: 10px;
 }
 
 .frontpage-container {
@@ -94,6 +97,7 @@ header{
     width: 100%;
     height: auto;
     object-fit: cover;
+    display: block;
 }
 
 /* Blue overlay color at the top of the image */
@@ -106,24 +110,38 @@ header{
   left: 0;
 }
 
-h1, h2 {
+
+/* css for body */
+p, h1, h2{
+    font-family: sans-serif;
+}
+
+/* Style for h1, size, position and color */
+h1 {
     font-weight: bolder;
-    color: white;
+    font-size: 4.5em;
+    max-width: auto;
     padding-left: 5%;
     padding-right: 5%;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
     position: absolute;
     white-space: normal;
 }
 
-h1 {
-    font-size: 4.5em;
-}
-
+/* Style for h2, size, pisition and color */
 h2 {
     top: 5em;
+    left: 0;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    white-space: normal;
 }
-
 /* Flexbox layout for the main container to arrange children horizontally */
 main {
     display: flex; 
@@ -178,15 +196,16 @@ label {
 }
 
 label:hover {
-    background: #6a1a66;
-    color: rgb(255, 255, 255);
+    background: #00509e;
+    color: rgb(0, 0, 0);
 }
 
 .content {
     background: #ffffff;
-    border: 1px solid #a7a7a7;
+    border: 1px solid #A7A7A7;
     padding: 1em 0 1em 1em;
     border-radius: 0.5em;
+    color: #1e1e1e;
     line-height: 1.6;
     max-height: auto;
     overflow: hidden;
@@ -200,6 +219,10 @@ input:checked + label + .content {
     display: block;
     padding-top: 1em;
 }
+
+* {
+    box-sizing: border-box;
+  }
   
   .box{
 padding-bottom: 3em;
@@ -221,6 +244,7 @@ padding-bottom: 3em;
     justify-content: space-between;
     gap: 10px;
     max-width: 100%;
+    max-width: 1400px;
     box-sizing: border-box;
     padding: 0 20px;
     align-items: center; 
