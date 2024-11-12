@@ -7,18 +7,17 @@ body {
   color:#000;
 }
 header{
-    font-family: sans-serif;
     text-align: center;
     background-color: #3A5F88;
     color: white;
 }
-/* Navigation bar & dropdown menu CSS. Point of departure: https://www.w3schools.com/css/css_navbar_horizontal.asp 
-                                                        &  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
+/* Navigation bar CSS*/
 .topnav {
   list-style-type: none; 
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #3A5F88;
 }
 .topnav li {
   float: left;
@@ -44,6 +43,7 @@ header{
   float: left;
   overflow: hidden;
 }
+
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
@@ -55,7 +55,6 @@ header{
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
-/* The menu-box that appears when hovering */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -64,7 +63,8 @@ header{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-/* Links inside the dropdown menu */
+
+/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: black;
@@ -74,6 +74,7 @@ header{
   text-align: left;
 }
 
+/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
@@ -81,10 +82,6 @@ header{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.topnav-logo{
-  height: 40px;
-  margin-right: 10px;
 }
 
 .frontpage-container {
