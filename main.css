@@ -5,6 +5,9 @@ body {
   background-color: #f0f0f0;
   color:#000;
 }
+body {
+  margin: 0;
+}
 header{
     font-family: sans-serif;
     text-align: center;
@@ -12,17 +15,12 @@ header{
     color: white;
 }
 /* Navigation bar CSS*/
-.topnav ul {
-  display: flex;
-  align-items: center;
+.topnav {
   list-style-type: none; 
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #3A5F88;
-  top: 0;
-  width: 100%;
-  z-index: 1;
 }
 .topnav li {
   float: left;
@@ -44,10 +42,12 @@ header{
   height: 40px;
   margin-right: 10px;
 }
-.dropdown {
+.topnav .dropdown {
   float: left;
   overflow: hidden;
 }
+
+/* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -55,8 +55,8 @@ header{
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; 
-  margin: 0; 
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
 .dropdown-content {
   display: none;
@@ -66,20 +66,29 @@ header{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   text-align: left;
 }
+
+/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
+
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.topnav-logo{
+  height: 40px;
+  margin-right: 10px;
 }
 
 .frontpage-container {
@@ -299,6 +308,9 @@ padding-bottom: 3em;
     .accordion-container {
       grid-template-columns: 1fr; 
       gap: 1.5em;
+    }
+    .topnav, .dropdown {
+      float:none;
     }
   
 /* Adjustment of font size and position for h1 and h2 at a maximum width of 600px */
