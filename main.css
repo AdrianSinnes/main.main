@@ -7,17 +7,16 @@ body {
 }
 header{
     font-family: sans-serif;
-    text-align: center;
     background-color: #3A5F88;
     color: white;
 }
-/* Navigation bar CSS*/
+/* Navigation bar & dropdown menu CSS. Point of departure: https://www.w3schools.com/css/css_navbar_horizontal.asp 
+                                                        &  https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
 .topnav {
   list-style-type: none; 
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3A5F88;
 }
 .topnav li {
   float: left;
@@ -43,7 +42,6 @@ header{
   float: left;
   overflow: hidden;
 }
-
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
@@ -55,6 +53,7 @@ header{
   font-family: inherit; 
   margin: 0; 
 }
+/* The menu-box that appears when hovering */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -63,8 +62,7 @@ header{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
-/* Links inside the dropdown */
+/* Links inside the dropdown menu */
 .dropdown-content a {
   float: none;
   color: black;
@@ -73,15 +71,11 @@ header{
   display: inline-block;
   text-align: left;
 }
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
+/* Shows the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} 
+/* OsloMet logo inside header */
 .topnav-logo{
   height: 40px;
   margin-right: 10px;
