@@ -337,7 +337,7 @@ margin-bottom: 10px;
   }
 
   h5{
-    font-size: 2em;
+    font-size: 2.5em;
   }
   
 
@@ -388,10 +388,10 @@ margin-bottom: 10px;
 
 /* Main container with CSS Grid */
 .container-student {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
   background-color: #d1ebdb;
+  gap: 1em; 
   width: 100%;
   margin-top: 5em;
   padding: 35px;
@@ -399,14 +399,16 @@ margin-bottom: 10px;
 
 /* Text section styles */
 .text-section {
+  grid-column: 1; /* Positions text section in the first column */
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding-left: 30px;
+  justify-content: center;
+  gap: 15px;
 }
 
 h6 {
   font-size: 2em;
+  margin-bottom: 10px;
   color: black;
   font-weight: lighter;
 }
@@ -421,6 +423,8 @@ h6 {
 }
 .text-section p {
   font-size: 1rem;
+  margin-bottom: 10px;
+  color: black;
 }
 
 
@@ -445,12 +449,12 @@ h6 {
 
 /* Image section styles */
 .image-section {
-    max-width: 50%;
-    height: 100%;
-    object-fit: cover;
+    grid-column: 2; /* Putting the picture in the second grid column */
+    max-width: 100%;
+    height: auto;
+    align-items: center;
     display: block;
     margin: auto;
-
   }
 
 /* Responsive adjustments */
@@ -590,14 +594,23 @@ th {
 }
 .social-links{
     display: flex;
-    gap: 100px;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
     margin-top: 50px;
     padding: 10px 100px;
 }
 .social-links a {
 color: rgb(255, 255, 255);
-font-size: 1.5em;
+font-size: 1em;
+text-decoration: none;
+}
+.social-links a:hover{
+  color: black;
+  transition: 0.3s ease;
+}
+.social-links i{
+  margin-right: 20px;
 }
 .footer-col{
     flex: 1 1 10%;
@@ -635,13 +648,17 @@ font-size: 1.5em;
     color: #ffffff;
     display: block;
     transition: all 0.3s ease;
-    padding: 0.7em;
-    text-decoration: underline;
+    text-decoration: none;
+}
+.footer-col ul li a:hover{
+text-decoration: underline;
 }
 
-.footer-col ul li a:hover{
-text-decoration: none;
+/* Accessibility  CSS */
+.autotest-1, .autotest-2{
+  float: right;
 }
+
 
 
 /*scaling 574px*/
@@ -858,9 +875,6 @@ text-decoration: none;
       width: 400px;
       margin-left: 3em;
     }
-    h5{
-      font-size: 1.5em;
-    }
   }
 
 
@@ -874,7 +888,7 @@ text-decoration: none;
 
   @media (max-width: 500px){
     h5{
-      font-size: 1.3em;
+      font-size: 2em;
       margin-left: 1em;
     }
   }
@@ -922,7 +936,3 @@ text-decoration: none;
   }
 }
 
-.image-access{
-  float: right;
-  padding: 25px;
-}
