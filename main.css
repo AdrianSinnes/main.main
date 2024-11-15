@@ -408,14 +408,14 @@ margin-bottom: 10px;
 
 .text-section h7 {
 
-  font-size: 2rem;
+  font-size: 2em;
   margin-bottom: 10px;
   color: black;
 }
 /* Styling the link to look like a heading */
 .historylink {
-  font-size: 1.5rem;
-  color: #3A5F88; /* Light blue color */
+  font-size: 1.5em;
+  color: black; 
   margin-bottom: 20px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -427,13 +427,15 @@ margin-bottom: 10px;
   color: black;
 }
 
-.text-section button {
+
+
+.historyButton {
   padding: 2%;
-  background-color: rgb(217,217,217);
-  color: #333;
+  background-color:black;
+  color: white;
   border: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1em;
   width: 20rem;
   transition: background-color 0.3s ease;
   text-decoration: none;
@@ -441,8 +443,8 @@ margin-bottom: 10px;
   padding: 1rem;
 }
 
-.text-section button:hover {
-  background-color: #e0e0e0;
+.historyButton:hover {
+  background-color: rgba(31, 31, 31, 0.49);
 }
 
 /* Image section styles */
