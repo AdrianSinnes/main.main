@@ -337,7 +337,7 @@ margin-bottom: 10px;
   }
 
   h5{
-    font-size: 2.5em;
+    font-size: 2em;
   }
   
 
@@ -635,17 +635,13 @@ font-size: 1.5em;
     color: #ffffff;
     display: block;
     transition: all 0.3s ease;
-    text-decoration: none;
+    padding: 0.7em;
+    text-decoration: underline;
 }
+
 .footer-col ul li a:hover{
-text-decoration: underline;
+text-decoration: none;
 }
-
-/* Accessibility  CSS */
-.autotest-1, .autotest-2{
-  float: right;
-}
-
 
 
 /*scaling 574px*/
@@ -862,6 +858,9 @@ text-decoration: underline;
       width: 400px;
       margin-left: 3em;
     }
+    h5{
+      font-size: 1.5em;
+    }
   }
 
 
@@ -875,7 +874,7 @@ text-decoration: underline;
 
   @media (max-width: 500px){
     h5{
-      font-size: 2em;
+      font-size: 1.3em;
       margin-left: 1em;
     }
   }
@@ -923,3 +922,7 @@ text-decoration: underline;
   }
 }
 
+.image-access{
+  float: right;
+  padding: 25px;
+}
