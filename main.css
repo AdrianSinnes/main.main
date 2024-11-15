@@ -406,7 +406,7 @@ margin-bottom: 10px;
   gap: 15px;
 }
 
-.text-section h7 {
+.text-section h3 {
 
   font-size: 2em;
   margin-bottom: 10px;
@@ -441,6 +441,7 @@ margin-bottom: 10px;
   text-decoration: none;
   font-weight: bold;
   padding: 1rem;
+  text-align: center;
 }
 
 .historyButton:hover {
