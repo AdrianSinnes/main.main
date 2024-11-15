@@ -643,14 +643,6 @@ font-size: 1.5em;
 .footer-col ul li a:hover{
 text-decoration: underline;
 }
-
-/* Accessibility  CSS */
-.autotest-1, .autotest-2{
-  float: right;
-}
-
-
-
 /*scaling 574px*/
 @media (max-width:574px){
 /*accordion container*/
@@ -929,3 +921,7 @@ text-decoration: underline;
   }
 }
 
+.image-access{
+  float: right;
+  padding: 25px;
+}
