@@ -638,11 +638,15 @@ font-size: 1.5em;
     color: #ffffff;
     display: block;
     transition: all 0.3s ease;
-    text-decoration: none;
+    padding: 0.7em;
+    text-decoration: underline;
 }
+
 .footer-col ul li a:hover{
-text-decoration: underline;
+text-decoration: none;
 }
+
+
 /*scaling 574px*/
 @media (max-width:574px){
 /*accordion container*/
