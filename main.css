@@ -11,7 +11,7 @@ header{
     color: white;
 }
 /* Navigation bar CSS*/
-.topnav {
+.topnav ul {
   list-style-type: none; 
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ header{
   background-color: #4776ab;
 }
 .active {
-  background-color: #2a4462;
+  background-color: #2d4e74;
 }
 .topnav-logo{
   height: 40px;
