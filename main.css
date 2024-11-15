@@ -563,6 +563,10 @@ h6{
 text-decoration: underline;
 }
 
+/* Accessibility  CSS */
+.autotest-1, .autotest-2{
+  float: right;
+}
 
 /*scaling 574px*/
 @media (max-width:574px){
@@ -838,3 +842,4 @@ text-decoration: underline;
     margin-top: 2em;
   }
 }
+
