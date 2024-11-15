@@ -340,7 +340,7 @@ margin-bottom: 10px;
     font-size: 2.5em;
   }
   
-  /* creates 3 colons so the boxes will stay 3x3x3, also ajusting the gap between the boxes */
+
   /* creates 3 colons so the boxes will stay 4x2, also ajusting the gap between the boxes */
   .grid {
     display: grid;
@@ -527,9 +527,38 @@ th {
   padding: 10px;
 }
 
+@media screen and (max-width: 650px) {
+  .table-container {
+    width: 100%;
+    padding: 10px;
+  }
 
+  table {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 
+  th, td {
+    padding: 8px;
+  }
 
+  .semester-title, .year {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .semester-box {
+    padding: 15px;
+  }
+
+  .emnefag-title {
+    padding: 8px;
+  }
+
+  .accordion-container {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}
 
 
 
@@ -625,6 +654,8 @@ text-decoration: underline;
 .autotest-1, .autotest-2{
   float: right;
 }
+
+
 
 /*scaling 574px*/
 @media (max-width:574px){
