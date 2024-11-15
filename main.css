@@ -466,6 +466,61 @@ h6 {
   }
 }
 
+.table-container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.year {
+  background-color: #2980b9;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.semester-box {
+  background-color: #ecf0f1;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.semester-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #bdc3c7;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+}
+
+.emnefag-title {
+  font-weight: bold;
+  background-color: #b2d3e7;
+  text-align: left;
+  padding: 10px;
+}
+
 
 
 
@@ -560,6 +615,10 @@ font-size: 1.5em;
 text-decoration: underline;
 }
 
+/* Accessibility  CSS */
+.autotest-1, .autotest-2{
+  float: right;
+}
 
 /*scaling 574px*/
 @media (max-width:574px){
@@ -835,3 +894,4 @@ text-decoration: underline;
     margin-top: 2em;
   }
 }
+
