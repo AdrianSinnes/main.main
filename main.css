@@ -648,10 +648,11 @@ text-decoration: none;
     color: #ffffff;
     display: block;
     transition: all 0.3s ease;
-    text-decoration: none;
+    padding: 10px;
+    text-decoration: underline;
 }
 .footer-col ul li a:hover{
-text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Accessibility  CSS */
