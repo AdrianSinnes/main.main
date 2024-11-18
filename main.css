@@ -38,10 +38,6 @@ header{
   height: 40px;
   margin-right: 10px;
 }
-.topnav .dropdown {
-  float: left;
-  overflow: hidden;
-}
 
 /* Dropdown button */
 .dropdown .dropbtn {
@@ -733,8 +729,11 @@ text-decoration: none;
             gap: 1.5em;
         }
 
-        .topnav, .dropdown {
+        .topnav li {
             float:none;
+        }
+        .dropdown-content {
+          position: relative;
         }
       
         label {
