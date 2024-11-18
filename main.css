@@ -598,7 +598,7 @@ th {
     gap: 50px;
     align-items: center;
     margin-top: 50px;
-    padding: 10px 100px;
+    padding: 10px 10px;
 }
 .social-links a {
 color: rgb(255, 255, 255);
@@ -621,7 +621,7 @@ text-decoration: none;
 }
 .oslomet-logo-footer{
     background-color:#3a5f88 ;
-    margin: 20px 0;
+    margin:0 0 20px 0;
     width: 200px;
     height: auto;
 }
