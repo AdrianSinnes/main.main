@@ -598,8 +598,12 @@ text-decoration: none;
 }
 
 /* Accessibility  CSS */
-.autotest-1, .autotest-2{
-  float: right;
+.image-access {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
 }
 
 
@@ -732,6 +736,9 @@ body, html {
   }
   .text-section, .image-section {
       grid-column: 1; /* Make both sections full-width on small screens */
+  }
+  .image-access {
+    float: none;
   }
 
   /* Changes width of interest linkbox */
