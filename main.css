@@ -7,7 +7,6 @@ body {
 }
 header{
     text-align: center;
-    background-color: #3A5F88;
     color: white;
 }
 /* Navigation bar CSS*/
@@ -37,9 +36,11 @@ header{
 .topnav-logo{
   height: 40px;
 }
+/* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only dropdown.
+   Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
 
-/* Dropdown button */
-.dropdown .dropbtn {
+/* Dropdown button*/
+.dropdown .dropbtn, .dropdown-activity .dropbtn-activity {
   font-size: 16px;
   border: none;
   outline: none;
@@ -49,32 +50,51 @@ header{
   font-family: inherit; 
   margin: 0; 
 }
-.dropdown-content {
+.dropdown-content, .dropdown-content-activity {
   display: none;
-  position: absolute;
-  background-color: #3A5F88;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+.dropdown-content{
+  background-color: #3A5F88;
+  min-width: 160px;
+  position: absolute;
+}
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a, .dropdown-content-activity a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: inline-block;
-  text-align: left;
+  text-align: center;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown-activity:hover .dropdown-content-activity {
   display: block;
+}
+/* Dropdown css specific for activity*/
+.dropdown-activity .dropbtn-activity{
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 120px;
+}
+.dropdown-activity{
+  position: fixed;
+  z-index: 1;
+}
+.dropdown-content-activity{
+  min-width: 120px;
+}
+.dropdown-content-activity a{
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+}
+.dropdown-content-activity a:hover{
+  background-color: #0000001f;
 }
 
 .frontpage-container {
@@ -597,15 +617,13 @@ text-decoration: none;
   text-decoration: none;
 }
 
-/* Accessibility  CSS */
-.image-access {
-    float: right;
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    margin: auto;
+/* Css for accessibility-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary */
+.access-h3{
+  color: white;
 }
-
+.image-access{
+  width: 100%;
+}
 
 
 /*Activity*/
@@ -638,6 +656,28 @@ body, html {
   background-image: url('Images/puffin.png');
 }
 
+.bird-info{
+  line-height: 1.7;
+}
+
+.bird-image-section{
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.bird-round{
+  width: 100%; /* Full width of the container */
+    max-width: 300px; /* Optional: set a maximum width */
+    aspect-ratio: 1 / 1; /* Ensures the image remains a square */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures proper scaling within the circle */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
 
 
 /* Text overlay */
@@ -669,6 +709,45 @@ body, html {
 }
 
 
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  padding: 20px; 
+}
+
+/* Individual items */
+.item {
+  text-align: center; 
+  background-color: rgb(168, 236, 231) ;
+  padding-top: 1em;
+}
+
+/* Circular images */
+.round-image {
+  width: 100%; 
+  max-width: 150px; 
+  aspect-ratio: 1 / 1; 
+  border-radius: 50%;
+  object-fit: cover; 
+  margin: 0 auto; 
+}
+
+
+/* Text below each image */
+.text-box {
+  margin-top: 10px; 
+  font-size: 1em;
+  color: #333; 
+}
+
+.text-box-title{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
 /* Media query */
 
 /* Swtitches to 1 column when page shrinks to 1400px */
@@ -695,7 +774,7 @@ body, html {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 1em; 
-  }    
+  }
 }
 
 
@@ -736,9 +815,6 @@ body, html {
   }
   .text-section, .image-section {
       grid-column: 1; /* Make both sections full-width on small screens */
-  }
-  .image-access {
-    float: none;
   }
 
   /* Changes width of interest linkbox */
