@@ -36,7 +36,6 @@ header{
 }
 .topnav-logo{
   height: 40px;
-  margin-right: 10px;
 }
 
 /* Dropdown button */
@@ -76,10 +75,6 @@ header{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.topnav-logo{
-  height: 40px;
-  margin-right: 10px;
 }
 
 .frontpage-container {
