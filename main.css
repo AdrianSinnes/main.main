@@ -617,15 +617,13 @@ text-decoration: none;
   text-decoration: none;
 }
 
-/* Accessibility  CSS */
-.image-access {
-    float: right;
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    margin: auto;
+/* Css for accessibility-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary */
+.access-h3{
+  color: white;
 }
-
+.image-access{
+  width: 100%;
+}
 
 
 /*Activity*/
@@ -715,7 +713,7 @@ body, html {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 1em; 
-  }    
+  }
 }
 
 
@@ -756,9 +754,6 @@ body, html {
   }
   .text-section, .image-section {
       grid-column: 1; /* Make both sections full-width on small screens */
-  }
-  .image-access {
-    float: none;
   }
 
   /* Changes width of interest linkbox */
