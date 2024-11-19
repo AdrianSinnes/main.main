@@ -601,6 +601,68 @@ text-decoration: none;
 
 
 
+/*Activity*/
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
+.parallax {
+  height: 100%; /* Full height */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Individual parallax images */
+.parallax1 {
+  background-image: url('Images/fuglekikking.png'); 
+}
+
+.parallax2 {
+  background-image: url('Images/snowowl.png');
+}
+
+.parallax3 {
+  background-image: url('Images/puffin.png');
+}
+
+.parallax4 {
+  background-image: url('image4.jpg');
+}
+
+/* Text overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.text-overlay h1, .text-overlay p {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Content sections between parallax */
+.contentactivty {
+  padding: 40px;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 1.2em;
+  line-height: 1,8;
+}
+
 
 /* Media query */
 
@@ -917,4 +979,10 @@ text-decoration: none;
     }
   }
   
-  
+  /* Activity Media */
+
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
