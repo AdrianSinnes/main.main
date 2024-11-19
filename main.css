@@ -183,6 +183,7 @@ label {
     transition: color 0.3s ease;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 0.1em solid #6a1a66 ;
 }
 
 label:hover {
@@ -455,6 +456,8 @@ h6 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .year {
@@ -887,6 +890,7 @@ body, html {
     grid-template-columns: 1fr; /* Stack columns on smaller screens */
   }
 }
+
 
 
 /*scaling 574px drop down boxes*/
