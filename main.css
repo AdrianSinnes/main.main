@@ -7,7 +7,6 @@ body {
 }
 header{
     text-align: center;
-    background-color: #3A5F88;
     color: white;
 }
 /* Navigation bar CSS*/
@@ -37,9 +36,11 @@ header{
 .topnav-logo{
   height: 40px;
 }
+/* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only dropdown.
+   Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
 
-/* Dropdown button */
-.dropdown .dropbtn {
+/* Dropdown button*/
+.dropdown .dropbtn, .dropdown-activity .dropbtn-activity {
   font-size: 16px;
   border: none;
   outline: none;
@@ -49,32 +50,51 @@ header{
   font-family: inherit; 
   margin: 0; 
 }
-.dropdown-content {
+.dropdown-content, .dropdown-content-activity {
   display: none;
-  position: absolute;
-  background-color: #3A5F88;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+.dropdown-content{
+  background-color: #3A5F88;
+  min-width: 160px;
+  position: absolute;
+}
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a, .dropdown-content-activity a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: inline-block;
-  text-align: left;
+  text-align: center;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown-activity:hover .dropdown-content-activity {
   display: block;
+}
+/* Dropdown css specific for activity*/
+.dropdown-activity .dropbtn-activity{
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 120px;
+}
+.dropdown-activity{
+  position: fixed;
+  z-index: 1;
+}
+.dropdown-content-activity{
+  min-width: 120px;
+}
+.dropdown-content-activity a{
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+}
+.dropdown-content-activity a:hover{
+  background-color: #0000001f;
 }
 
 .frontpage-container {
