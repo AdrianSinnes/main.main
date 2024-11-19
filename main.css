@@ -658,6 +658,28 @@ body, html {
   background-image: url('Images/puffin.png');
 }
 
+.bird-info{
+  line-height: 1.7;
+}
+
+.bird-image-section{
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.bird-round{
+  width: 100%; /* Full width of the container */
+    max-width: 300px; /* Optional: set a maximum width */
+    aspect-ratio: 1 / 1; /* Ensures the image remains a square */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures proper scaling within the circle */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
 
 
 /* Text overlay */
@@ -686,6 +708,45 @@ body, html {
   color: #333;
   font-size: 1.2em;
   line-height: 1,8;
+}
+
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  padding: 20px; 
+}
+
+/* Individual items */
+.item {
+  text-align: center; 
+  background-color: rgb(168, 236, 231) ;
+  padding-top: 1em;
+}
+
+/* Circular images */
+.round-image {
+  width: 100%; 
+  max-width: 150px; 
+  aspect-ratio: 1 / 1; 
+  border-radius: 50%;
+  object-fit: cover; 
+  margin: 0 auto; 
+}
+
+
+/* Text below each image */
+.text-box {
+  margin-top: 10px; 
+  font-size: 1em;
+  color: #333; 
+}
+
+.text-box-title{
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 
