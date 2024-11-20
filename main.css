@@ -652,51 +652,35 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   gap: 20px;  
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .main-heading {
-  font-size: 2rem;
-  color: #2980b9; /* Blue color for sub-heading */
+  justify-content: center;
+  font-size: 2.5em;
   text-align: center;
   margin-bottom: 30px;
 }
-.intro {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
+section h4{
+  color: #2980b9;
+  padding:0 20%;
+}
+section p{
+  padding:0  20%;
 }
 
-.advantages-Github {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
+.advantages-Github ul {
+  list-style-type: none; 
+  padding:0 20%;
 }
 
-.challenges-Github {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.conclusion {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-
-/* Styling for unordered list inside section */
-section ul {
-  list-style-type: disc; /* Removes default list bullets */
-  padding-left: 5%;
-}
-
-section ul li {
+.advantages-Github ul li {
+  background-color: #ecf0f1; 
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 5px; /* Slight rounding for list items */
+  border-radius: 5px; 
 }
-
 
 /* Small adjustments for mobile */
 @media (max-width: 768px) {
