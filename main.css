@@ -1,10 +1,9 @@
 /* Removes the standard margin */
-body {
+body, html {
   margin: 0; 
   font-family: sans-serif, Arial, Helvetica;
   background-color: #ffffff;
   color:#000;
-  overflow-x:hidden ;/*skjuler horisontal scrolling*/
 }
 header{
     text-align: center;
@@ -417,7 +416,7 @@ margin-bottom: 10px;
   gap: 15px;
 }
 
-h6, .activity-h3 {
+h6, .bird-watch {
   font-size: 2em;
   margin-bottom: 10px;
   color: black;
@@ -704,14 +703,11 @@ section ul li {
   }
 }
 
-/*Activity*/
-body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth; /* Smooth scrolling */
-}
+/*Activity html*/
+
 
 /*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
+/*Parralax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
 .parallax {
   height: 100%; /* Full height */
   background-attachment: fixed;
@@ -722,14 +718,15 @@ body, html {
 }
 
 /* Individual parallax images */
+/* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
 .parallax1 {
   background-image: url('Images/fuglekikking.png'); 
 }
-
+/* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
   background-image: url('Images/snowowl.png');
 }
-
+/* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
   background-image: url('Images/puffin.png');
 }
@@ -759,22 +756,28 @@ body, html {
 
 
 /* Text overlay */
-.text-overlay {
+.text-overlay .activity-h1,.fuglp  {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Makes position in center */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px 40px;
-  border-radius: 8px;
+  border-radius: 8px; /*Makes round corners*/
   text-align: center;
-}
-
-.text-overlay h1, .text-overlay p {
   margin: 0;
   font-size: 2em;
 }
+.text-overlay .activity-h1 {
+  font-size: 4em; /* Set larger font size for activity-h1 */
+}
+
+
+
+
+
+
 
 /* Content sections between parallax */
 .contentactivty {
@@ -823,6 +826,11 @@ body, html {
 .text-box-title{
   font-size: 1.3em;
   font-weight: bold;
+}
+
+.title-box{
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 
@@ -924,6 +932,9 @@ body, html {
   
     .content {
       padding-left: 1em; 
+    }
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
@@ -1117,6 +1128,9 @@ body, html {
   h2{
     font-size: 1em;
     margin-top: 3em;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
 
