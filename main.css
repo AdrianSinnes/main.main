@@ -699,14 +699,15 @@ section li {
 }
 
 /* Individual parallax images */
+/* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
 .parallax1 {
   background-image: url('Images/fuglekikking.png'); 
 }
-
+/* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
   background-image: url('Images/snowowl.png');
 }
-
+/* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
   background-image: url('Images/puffin.png');
 }
@@ -740,11 +741,11 @@ section li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /*Centers element*/
+  transform: translate(-50%, -50%); /* Makes position in center */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px 40px;
-  border-radius: 8px;
+  border-radius: 8px; /*Makes round corners*/
   text-align: center;
   margin: 0;
   font-size: 2em;
