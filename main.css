@@ -929,6 +929,7 @@ padding-top: 3em;
   transform: rotateY(180deg);
   padding-left: 2em;
   padding-right: 2em;
+  width: auto;
 }
 
 /* Optional: Styling for the back content */
@@ -1259,8 +1260,7 @@ padding-top: 3em;
     height: 100%;
   }
 
-  .flip-card-front,
-  .flip-card-back {
+  .flip-card-front, .flip-card-back {
     width: 100%; /* Ensures the back matches the card dimensions */
     height: 100%; /* Matches the card's height */
     position: absolute; /* Ensures front and back overlap perfectly */
