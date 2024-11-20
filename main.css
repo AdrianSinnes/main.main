@@ -669,12 +669,10 @@ section h4{
 section p{
   padding:0  20%;
 }
-
 .advantages-Github ul {
   list-style-type: none; 
   padding:0 20%;
 }
-
 .advantages-Github ul li {
   background-color: #ecf0f1; 
   margin-bottom: 10px;
