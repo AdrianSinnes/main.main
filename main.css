@@ -791,11 +791,12 @@ padding-top: 3em;
   border-radius: 8px; /*Makes round corners*/
   text-align: center;
   margin: 0;
-  font-size: 4em;
+  font-size: 1.8em;
 }
 
-
-
+.text-overlay .activity-h1 {
+  font-size: 3em; /* Set larger font size for activity-h1 */
+}
 
 
 
