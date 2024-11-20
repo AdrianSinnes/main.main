@@ -691,6 +691,7 @@ body, html {
 }
 
 /*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
+/*Parralax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
 .parallax {
   height: 100%; /* Full height */
   background-attachment: fixed;
@@ -738,7 +739,7 @@ body, html {
 
 
 /* Text overlay */
-.text-overlay {
+.text-overlay  {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -750,10 +751,13 @@ body, html {
   text-align: center;
 }
 
-.text-overlay h1, .text-overlay p {
+.text-overlay p,h7{
   margin: 0;
   font-size: 2em;
 }
+
+
+
 
 /* Content sections between parallax */
 .contentactivty {
