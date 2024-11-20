@@ -217,7 +217,6 @@ label:hover {
     padding: 1em 0 1em 1em;
     border-radius: 0.5em;
     color: #1e1e1e;
-    line-height: 1.6;
     max-height: auto;
     overflow: hidden;
 }
@@ -327,7 +326,6 @@ width: 40%;
 font-size: 2em;
 font-weight:200;
 color: #000000;
-line-height: 1.5;
 margin: 0;
 margin-bottom: 10px;
 }
@@ -337,6 +335,10 @@ margin-bottom: 10px;
     text-decoration: underline; 
 }
 
+/* line height */
+.bird-info, content, .contentactivty, .contact-section-heading, .flex-container, .flip-card-back  {
+  line-height: 1.6;
+}
 
 
 
@@ -418,7 +420,7 @@ margin-bottom: 10px;
   gap: 15px;
 }
 
-h6, .bird-watch {
+h6, .bird-watch{ 
   font-size: 2em;
   margin-bottom: 10px;
   color: black;
@@ -690,6 +692,7 @@ body, html {
   scroll-behavior: smooth; /* Smooth scrolling */
 }
 
+
 /*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
 /*Parralax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
 .parallax {
@@ -714,8 +717,10 @@ body, html {
   background-image: url('Images/puffin.png');
 }
 
-.bird-info{
-  line-height: 1.7;
+
+
+.bird-watch{
+  position: static;
 }
 
 .bird-image-section{
@@ -735,7 +740,11 @@ body, html {
     margin: 0 auto; /* Center the image horizontally */
 }
 
-
+.top-bird-text{
+  font-size: 2em;
+  margin-left: 2em;
+padding-top: 3em;
+}
 
 
 /* Text overlay */
@@ -766,7 +775,6 @@ body, html {
   background-color: #f4f4f4;
   color: #333;
   font-size: 1.2em;
-  line-height: 1,8;
 }
 
 
@@ -812,6 +820,106 @@ body, html {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4em; /* Avstand mellom boksene */
+  max-width: 800px;
+  margin: 0 auto; /* Sentrer containeren på siden */
+  color: white;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.flex-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #927d56;
+  width: 70%; /* Boksene tar halvparten av bredden */
+}
+
+.left-box {
+  align-self: flex-start; /* Plasser til venstre */
+}
+
+.right-box {
+  align-self: flex-end; /* Plasser til høyre */
+}
+
+
+/* <!-- Base code found here: https://www.w3schools.com/howto/howto_css_flip_card.asp --> */
+.flip-card-title{
+  font-size: 1em;
+}
+.flip-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 4em; 
+  justify-items: center; 
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 1000px; 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front img {
+  width: 100%;    
+  height: 100%;  
+  object-fit: cover;  
+  object-position: center; 
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:  rgb(168, 236, 231) ;
+  color: black;
+  transform: rotateY(180deg);
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* Optional: Styling for the back content */
+.flip-card-title {
+  padding-top: 2em;
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: black;
+}
+
+
+
 
 
 /* Media query */
