@@ -419,7 +419,7 @@ margin-bottom: 10px;
   gap: 15px;
 }
 
-h6, .activity-h3 {
+h6, .bird-watch {
   font-size: 2em;
   margin-bottom: 10px;
   color: black;
@@ -808,6 +808,11 @@ section li {
   font-weight: bold;
 }
 
+.title-box{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 
 /* Media query */
 
@@ -907,6 +912,9 @@ section li {
   
     .content {
       padding-left: 1em; 
+    }
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
@@ -1100,6 +1108,9 @@ section li {
   h2{
     font-size: 1em;
     margin-top: 3em;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
 
