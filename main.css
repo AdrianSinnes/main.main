@@ -651,6 +651,10 @@ text-decoration: none;
     padding-bottom: 3em;
     width: 100%;
   }
+  .image-box img {
+    height: auto; 
+    border-radius: 5px; 
+  }
 .github{
   display: flex;
   flex-direction: column;
@@ -683,10 +687,36 @@ section p{
   border-radius: 5px; 
 }
 
-/* Small adjustments for mobile */
 @media (max-width: 768px) {
-  .example-pictures img {
-      max-width: 100%;
+  section h4,
+  section p,
+  .advantages-Github ul {
+    padding: 0 10%;
+  }
+
+  .main-heading {
+    font-size: 2em;
+  }
+.image-grid {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+@media (max-width: 480px) {
+  section h4,
+  section p,
+  .advantages-Github ul {
+    padding: 0 5%; 
+  }
+
+  .main-heading {
+    font-size: 1.8em; 
+  }
+
+  .advantages-Github ul li {
+    font-size: 1em;
+  }
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
 
