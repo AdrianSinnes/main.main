@@ -1,5 +1,5 @@
 /* Removes the standard margin */
-body {
+body, html {
   margin: 0; 
   font-family: sans-serif, Arial, Helvetica;
   background-color: #ffffff;
@@ -100,6 +100,7 @@ header{
 .frontpage-container {
   position: relative;
   overflow: hidden;
+  background-color: #000;
 }
 
 /* size on frontpage picture */
@@ -181,6 +182,7 @@ article {
     background-color: #3A5F88;
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 .accordion-container{
 display: grid;
@@ -229,10 +231,6 @@ input:checked + label + .content {
     display: block;
     padding-top: 1em;
 }
-
-* {
-    box-sizing: border-box;
-  }
   
   .box{
 padding-bottom: 3em;
@@ -628,54 +626,76 @@ text-decoration: none;
 }
 
 /*Css for Github page*/
-.github {
-  width: 100%;
-  max-width: 100%;
-  align-items: center;
-  padding:0 10%;
-}
-
-/* Styling for sections */
-section {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-section ul {
-  margin-left: 20px;
-}
-section li {
-  margin-bottom: 10px;
-}
-/* Image styling */
-.example-pictures {
+.box-example {
+  width: 100%; 
+  height: auto; 
+  background-color: #3A5F88;
+  padding: 0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  align-items: center;  
+}
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  gap: 2.5em;
+  margin-top: 1.25em;
+  justify-content: center;
+  }
+  .image-box{
+    padding-bottom: 3em;
+    width: 100%;
+  }
+.github{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  
+}
+
+.main-heading {
+  font-size: 2rem;
+  color: #2980b9; /* Blue color for sub-heading */
+  text-align: center;
   margin-bottom: 30px;
 }
-.example-pictures p {
-  font-size: 1.2rem;
-  font-weight: bold; 
-  margin: 0; 
-  text-align: center; 
-}
-.history-commit-container {
-  display: flex;
-  gap: 20px; 
-  justify-content: center;
+.intro {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
-.images-container img {
-  height: 500px; 
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+.advantages-Github {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
+.challenges-Github {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.conclusion {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+/* Styling for unordered list inside section */
+section ul {
+  list-style-type: disc; /* Removes default list bullets */
+  padding-left: 5%;
+}
+
+section ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px; /* Slight rounding for list items */
+}
 
 
 /* Small adjustments for mobile */
@@ -685,12 +705,8 @@ section li {
   }
 }
 
-/*Activity*/
-body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth; /* Smooth scrolling */
-}
+/*Activity html*/
+
 
 
 /*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
@@ -705,14 +721,15 @@ body, html {
 }
 
 /* Individual parallax images */
+/* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
 .parallax1 {
   background-image: url('Images/fuglekikking.png'); 
 }
-
+/* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
   background-image: url('Images/snowowl.png');
 }
-
+/* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
   background-image: url('Images/puffin.png');
 }
@@ -748,22 +765,25 @@ padding-top: 3em;
 
 
 /* Text overlay */
-.text-overlay  {
+.text-overlay .activity-h1,.fuglp  {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Makes position in center */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px 40px;
-  border-radius: 8px;
+  border-radius: 8px; /*Makes round corners*/
   text-align: center;
-}
-
-.text-overlay p,h7{
   margin: 0;
   font-size: 2em;
 }
+.text-overlay .activity-h1 {
+  font-size: 4em; /* Set larger font size for activity-h1 */
+}
+
+
+
 
 
 
