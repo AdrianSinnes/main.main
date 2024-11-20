@@ -20,64 +20,91 @@
             </ul>
         </nav>
     </header>
-    <main class="github">
-        <h3>Github</h3>
-        <section class="intro">           
-            <h3>Introduskjon til samarbeid i GitHub</h3>
-            <p> GitHub har vært en sentral del av samarbeidet i eksamensgruppen. Vi bruker det til å dele kode
-                og holde oversikt over endringer. Siden vi er flere som arbeider på samme prosjekt, har vi blitt 
-                enige om å pushe commits med beskrivende meldinger. Dette gjør commit-historikken oversiktlig og 
-                gir alle i gruppen en tydelig forståelse av hva som har blitt endret.
-            </p>
+    <!-- Front page picture. H1 and H2 is the title -->
+    <div class="frontpage-container">
+        <div class="gradient"></div>
+          <img src="images/githubFrontpage.png" alt="Hoved Bilde" class="PictureFrontPage">
+          <h1>GitHub</h1>
+      </div> 
+
+    <section class="box-example">
+        <h3 class="access-h3">Eksempler på versjonhistorikk og versjon forandringer</h3>
+            <div class="image-grid">
+                <div class="image-box">
+                    <input type="checkbox" id="title1" />
+                    <label for="title1">Versjonshistorikk 1</label>
+                    <div class="content">
+                        <img src="images/skjermbildeGitHub2.png" alt="Commits history picture">
+                    </div>
+                </div>
+                <div class="image-box">
+                    <input type="checkbox" id="title2" />
+                    <label for="title2">Versjonshistorikk 2</label>
+                    <div class="content">
+                        <img src="images/skjermbildeGitHub.png" alt="Commits history picture">
+                    </div>
+                </div>
+                <div class="image-box">
+                    <input type="checkbox" id="title3" />
+                    <label for="title3">Spesifikke versjonforandringer 1</label>
+                    <div class="content">
+                        <img src="images/skjermbildeGitHubChanges.png" alt="specific change of commit">
+                    </div>
+                </div>
+                <div class="image-box">
+                    <input type="checkbox" id="title4" />
+                    <label for="title4">Spesifikke versjonforandringer 2</label>
+                    <div class="content">
+                        <img src="images/skjermbildeGitHubChanges2.png" alt="specific change of commit">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <main>
+        <h3 class="main-heading">GitHub samarbeid</h3>
+        <article class="github">
+        <section class="intro">         
+                <h4>Effektivt samarbeid i GitHub</h4>
+                <p> GitHub har vært en sentral del av samarbeidet i eksamensgruppen vår. 
+                    Vi bruker det til å dele kode og holde oversikt over endringer, noe 
+                    som har gjort samarbeidet mye mer effektivt. Alle i gruppen har blitt 
+                    enige om å pushe commits med beskrivende meldinger. Dette gjør 
+                    commit-historikken oversiktlig, og gir alle en tydelig forståelse av hva som har blitt endret.
+                </p>
         </section>
 
         <section class="advantages-Github">  
-            <h3>Fordeler med GitHub</h3>
-            <p>GitHub har gitt oss mange verktøy som har gjort samarbeidet effektivt. Her er noen av fordelene:</p>
-            <ul>
-                <li><b>Versjonshistorikk:</b> Vi kan spore hvem som har gjort hvilke endringer og når.</li>
-                <li><b>Branches:</b> Dette lar oss utvikle nye funksjoner uten å påvirke hovedkoden.</li>
-                <li><b>Pull requests:</b> Gjennomgang av kode før den legges til i hovedprosjektet forbedrer kvaliteten.</li>
-            </ul>
-            <p>Ved å bruke disse funksjonene har vi kunnet jobbe mer strukturert og unngått store feil.</p> 
+            <h4>Versjonskontroll og sporing av endringer</h4>
+            <p>En av de største fordelene med GitHub er muligheten til å spore endringer i prosjektet. 
+                Vi kan enkelt se hvem som har gjort hvilke endringer, og når. Dette gir oss muligheten til å 
+                utvikle nye funksjoner uten å forstyrre hovedprosjektet, ved å jobbe på separate grener (branches). 
+                Når endringene er klare, kan vi gjøre en "pull request" for å gjennomgå og integrere dem i hovedprosjektet.
+            </p> 
         </section>
-
-        <section class="example-pictures">    
-            <h3>Her har du to eksempler på versjonhistorikken vår:</h3>  
-            <div class="history-commit-container">
-            <img src="images/skjermbildeGitHub2.png" alt="Commits history picture">
-            <img src="images/skjermbildeGitHub.png" alt="Commits history picture">
-            </div>
+        <section class="advantages-Github">
+            <h4>Fordeler med GitHub</h4>
+            <ul>
+                <li><b>Versjonskontroll:</b> Enkel sporing av alle endringer i koden, som gir en oversiktlig commit-historikk.</li>
+                <li><b>Samarbeid i sanntid:</b> Flere utviklere kan jobbe på samme prosjekt uten å forstyrre hverandre ved hjelp av grener og pull requests.</li>
+                <li><b>Kvalitetskontroll:</b> Code reviews gir muligheten til å gjennomgå kode før den legges til i prosjektet, noe som forbedrer kvaliteten på arbeidet.</li>
+                <li><b>Gratis og åpen kildekode:</b> GitHub er gratis for offentlig lagring av prosjekter, og koden er åpen kildekode, noe som fremmer samarbeid og deling av kunnskap.</li>
+            </ul>
         </section>
 
         <section class="challenges-Github">
-            <h3>Utfordringer som nybegynnere</h3>
-            <p> Som nybegynnere i GitHub har vi møtt noen utfordringer, spesielt med konflikter i koden. 
-                Dette skjedde ofte når flere jobbet på samme filer samtidig, som HTML eller CSS. Små endringer 
-                fra ulike medlemmer overskrev hverandre, og dette førte til tap av innhold eller feil.
+            <h4>kodegjennomgang og kvalitetskontroll</h4>
+            <p> Gjennomgang av kode før den legges til i hovedprosjektet har bidratt til å forbedre kvaliteten på arbeidet vårt. 
+                Det har vært spesielt nyttig for å unngå feil, og sikre at vi holder en høy standard på koden.
             </p>
-            <p><b>Tips for å unngå konflikter:</b></p>
-            <ul>
-                <li><b>Kommuniser tydelig:</b> Avklar hvem som jobber på hva tydelig.</li>
-                <li><b>Bruk branches: </b> Del opp arbeidet for å unngå endringer i samme del av koden.</li>
-                <li><b>Gjør små commits:</b> Hyppige og små endringer er enklere å håndtere.</li>
-            </ul>
         </section>
-
-        <Section class="example-pictures">
-            <p>Her har du to eksempler på spesifikke commits:</p>
-            <div class="specific-commit-container">
-            <img src="images/skjermbildeGitHubChanges.png" alt="specific change of commit">
-            <img src="images/skjermbildeGitHubChanges2.png" alt="specific change of commit">
-            </div>
-        </Section>
         
         <section class="conclusion">
-            <h3>Oppsummering</h3>
-            <p> Til tross for noen startproblemer har GitHub vist seg å være et uvurderlig verktøy for 
-                godt samarbeid og effektivitet. Det har både styrket prosjektet og forbedret arbeidsflyten, 
-                slik at vi kan jobbe raskere uten å miste kvaliteten på arbeidet.
+            <h4 class="sub-heading">Utfordringer og læring</h4>
+            <p> Som nybegynnere i GitHub har vi møtt utfordringer med konflikter i koden, spesielt når flere
+                jobbet på samme filer. Til tross for noen utfordringer har GitHub vært et uvurderlig verktøy
+                som har styrket samarbeidet vårt og forbedret arbeidsflyten.
             </p> 
         </section>
+        </article>
     </main>    
 </body>
