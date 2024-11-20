@@ -1,9 +1,10 @@
 /* Removes the standard margin */
-body {
+body, html {
   margin: 0; 
   font-family: sans-serif, Arial, Helvetica;
   background-color: #ffffff;
   color:#000;
+  height: 100%;
 }
 header{
     text-align: center;
@@ -683,12 +684,8 @@ section li {
   }
 }
 
-/*Activity*/
-body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth; /* Smooth scrolling */
-}
+/*Activity html*/
+
 
 /*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
 /*Parralax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
@@ -739,22 +736,25 @@ body, html {
 
 
 /* Text overlay */
-.text-overlay  {
+.text-overlay .activity-h1,.fuglp  {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*Centers element*/
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px 40px;
   border-radius: 8px;
   text-align: center;
-}
-
-.text-overlay p,h7{
   margin: 0;
   font-size: 2em;
 }
+.text-overlay .activity-h1 {
+  font-size: 4em; /* Set larger font size for activity-h1 */
+}
+
+
+
 
 
 
