@@ -1,6 +1,7 @@
 /* Removes the standard margin */
 body, html {
   margin: 0; 
+  height: 100%;
   font-family: sans-serif, Arial, Helvetica;
   background-color: #ffffff;
   color:#000;
@@ -406,7 +407,6 @@ margin-bottom: 10px;
   gap: 1em; 
   width: 100%;
   margin-top: 5em;
-  padding: 35px;
 }
 
 /* Text section styles */
@@ -416,6 +416,8 @@ margin-bottom: 10px;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  padding-left: 2em;
+  padding-right: 1em;
 }
 
 h6, .bird-watch{ 
@@ -453,6 +455,7 @@ h6, .bird-watch{
   text-decoration: none;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .historyButton:hover {
@@ -776,11 +779,9 @@ padding-top: 3em;
   border-radius: 8px; /*Makes round corners*/
   text-align: center;
   margin: 0;
-  font-size: 2em;
+  font-size: 4em;
 }
-.text-overlay .activity-h1 {
-  font-size: 4em; /* Set larger font size for activity-h1 */
-}
+
 
 
 
@@ -850,6 +851,8 @@ padding-top: 3em;
   color: white;
   padding-top: 4em;
   padding-bottom: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .flex-box {
@@ -887,6 +890,7 @@ padding-top: 3em;
   width: 500px;
   height: 300px;
   perspective: 1000px; 
+
 }
 
 /* This container is needed to position the front and back side */
@@ -969,6 +973,9 @@ padding-top: 3em;
     grid-template-columns: 1fr; 
     gap: 1em; 
   }
+  .flip-card-container{
+    grid-template-columns:1fr; 
+  }
 }
 
 
@@ -1024,6 +1031,7 @@ padding-top: 3em;
         width: 500px;
         margin-left: 4em;
       }
+  
     }
 
 
@@ -1169,6 +1177,9 @@ padding-top: 3em;
   .accordion-container {
     grid-template-columns: 1fr; /* Stack columns on smaller screens */
   }
+  .top-bird-text{
+    font-size: 1.5em;
+  }
 }
 
 
@@ -1240,7 +1251,38 @@ padding-top: 3em;
   .grid-container {
     grid-template-columns: 1fr;
   }
+  .flip-card {
+    width: 90%; /* Scales down the card width */
+    height: 300px; /* Scales down the card height */
+    margin: 0 auto; /* Centers the card */
+  }
+
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    width: 100%; /* Ensures the back matches the card dimensions */
+    height: 100%; /* Matches the card's height */
+    position: absolute; /* Ensures front and back overlap perfectly */
+  }
+
+  .flip-card-back {
+    padding: 1em; /* Adjust padding for smaller content if needed */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+  }
+
+  .flip-card-title {
+    font-size: 1em; /* Adjust text size */
+  }
+  .text-overlay .activity-h1 {
+    font-size: 2em; /* Reduser fontstørrelsen */
+  }
 }
+
+
 
     @media (max-width: 500px){
       .linkbox{
@@ -1261,6 +1303,9 @@ padding-top: 3em;
     h2{
       font-size: 0.7em;
       margin-top: 2em;
+    }
+    h3.top-bird-text{
+      font-size: 1.2em;
     }
   }
   
