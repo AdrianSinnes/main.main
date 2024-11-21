@@ -156,23 +156,13 @@ main {
     display: flex; 
     flex-wrap: wrap; 
 }
-
-/* Flexbox layout for the article to ensure proper spacing and minimum width */
-article {
-    display: flex; 
-    flex: 1; 
-    min-width: 18.75em; 
-}
-
 /* Styling for the secondary box with width, height, background, and padding */
 .secondary-box {
-    width: 20%; 
+    width: 16%;
     height: auto;
     background-color: rgb(255, 255, 255); 
-    padding: 1.25em; 
+    padding: 2%;
 }
-
-
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
     width: 80%; 
@@ -181,10 +171,12 @@ article {
     padding: 1.25em; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    min-width: 18.75em; 
+    flex: 1;
 }
 .accordion-container{
 display: grid;
-grid-template-columns: 525px 525px;
+grid-template-columns: 32.8em 32.8em;
 gap: 2.5em;
 margin-top: 1.25em;
 }
@@ -953,7 +945,7 @@ padding-top: 3em;
 
   @media (max-width: 1100px) {
     /* Change the article to column so the aside scales over the main box */
-    article {
+    main {
           flex-direction: column; 
       }
       .secondary-box,.main-box{
