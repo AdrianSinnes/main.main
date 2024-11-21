@@ -634,7 +634,7 @@ text-decoration: none;
 .accessibility-page article {
   display: block;
 }
-.accessibility-page .main-box, .accessibility-main img, .github-page .main-box{
+.accessibility-page .main-box, .accessibility-main img, .github-page .main-box, .github-main img{
   width: 100%;
 }
 .accessibility-page .secondary-box{
