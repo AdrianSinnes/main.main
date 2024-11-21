@@ -739,24 +739,24 @@ padding-top: 3em;
   transform: translate(-50%, -50%); /* Makes position in center */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 20px 40px;
+  padding: 0.5em 1em;
   border-radius: 8px; /*Makes round corners*/
-  text-align: center;
+  text-align: center; /* Centered text*/
   margin: 0;
-  font-size: 1.8em;
+  font-size: 1.8em; /* p text size */
 }
 
 .text-overlay .activity-h1 {
-  font-size: 3em; /* Set larger font size for activity-h1 */
+  font-size: 3em; /* Set larger font size for heading activity-h1 */
 }
 
 
 
 
 
-/* Content sections between parallax */
+/* Content section between parallax 1 & 2  */
 .contentactivty {
-  padding: 40px;
+  padding: 2em;
   text-align: center;
   background-color: #f4f4f4;
   color: #333;
@@ -768,8 +768,8 @@ padding-top: 3em;
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; 
-  padding: 20px; 
+  gap: 1.3em; 
+  padding: 1.3em; 
 }
 
 /* Individual items */
@@ -792,7 +792,7 @@ padding-top: 3em;
 
 /* Text below each image */
 .text-box {
-  margin-top: 10px; 
+  margin-top: 0.6em; 
   font-size: 1em;
   color: #333; 
 }
@@ -811,7 +811,7 @@ padding-top: 3em;
   display: flex;
   flex-direction: column;
   gap: 4em; /* Avstand mellom boksene */
-  max-width: 800px;
+  max-width: 50em;
   margin: 0 auto; /* Sentrer containeren på siden */
   color: white;
   padding-top: 4em;
@@ -821,7 +821,7 @@ padding-top: 3em;
 }
 
 .flex-box {
-  padding: 20px;
+  padding: 1.2em;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #342812;
@@ -861,9 +861,9 @@ padding-top: 3em;
 
 .flip-card {
   background-color: transparent;
-  width: 500px;
-  height: 300px;
-  perspective: 1000px; 
+  width: 31em;
+  height: 18em;
+  perspective: 63em; 
 
 }
 
