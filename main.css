@@ -1070,14 +1070,14 @@ padding-top: 3em;
         }
     /*profile and contact section*/
         .profile-section {
-            width: 100%;
-            padding: 1.5em; 
+            width: 98.5%;
+            padding: 1.5%; 
             margin-right: 0;  
         }
     
         .contact-section {
-            width: 100%;
-            padding: 1.5em; 
+            width: 98.5%;
+            padding: 1.5%; 
             margin-top: 20px; 
         }
     
@@ -1114,7 +1114,11 @@ padding-top: 3em;
         font-size: 1.5em;
         margin-top: 1.8em;
       }
-    }
+       h5{
+    font-size: 2.2em;
+    margin-left: 1em;
+      }
+}
 
 /* Table media */
 @media screen and (max-width: 650px) {
