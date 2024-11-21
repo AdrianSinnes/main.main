@@ -19,15 +19,15 @@ header{
   overflow: hidden;
   background-color: #3A5F88;
 }
-.topnav li {
-  float: left;
-  min-width: 6.5em;
+.topnav li, .topnav-logo {
+  float: left; /* Horizontal navbar */
 }
 .topnav li a{
-  display: block;
+  min-width: 5em;
+  display: block; /* Horizontal navbar */
   color: white;
   text-align: center;
-  padding: 0.875em 1em;
+  padding: 1.32em 1em;
   text-decoration: none;
 }
 .topnav li a:hover, .dropdown:hover .dropbtn {
@@ -37,24 +37,26 @@ header{
   background-color: #2d4e74;
 }
 .topnav-logo{
-  width: 4.4em;
+  width: 5em;
   height: auto;
+  margin-top: 0.25em;
 }
-/* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only dropdown.
+/* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only a dropdown menu.
    Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
 
 /* Dropdown button*/
-.dropdown .dropbtn, .dropdown-activity .dropbtn-activity {
+.dropbtn, .dropbtn-activity {
   font-size: 1em;
   border: none;
   outline: none;
   color: white;
-  padding: 0.875em 1em;
+  padding: 1.5em 1em;
   background-color: inherit;
   min-width: 11.71em;
+
 }
 .dropdown-content, .dropdown-content-activity {
-  display: none;
+  display: none; /* Hides the content */
   box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -73,7 +75,7 @@ header{
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-/* Show the dropdown menu on hover */
+/* Shows the dropdown menu on hover */
 .dropdown:hover .dropdown-content, .dropdown-activity:hover .dropdown-content-activity {
   display: block;
 }
@@ -83,7 +85,7 @@ header{
   min-width: 7.5em;
 }
 .dropdown-activity{
-  position: fixed;
+  position: fixed; /* Dropdown menu sticks to the top of the page*/
   z-index: 1;
 }
 .dropdown-content-activity a{
@@ -1041,12 +1043,21 @@ padding-top: 3em;
         .accordion-container, .accessibility-page .accordion-container, .github-page .accordion-container {
             gap: 1.5em;
         }
-
-        .topnav li {
-            float:none;
+        /* Goes from horizontal to vertical navbar */
+        .topnav li, .topnav-logo {
+            float: none;
         }
-        .dropdown-content {
-          position: relative;
+        /* Less padding so it covers less of the screen */
+        .topnav li a, .dropbtn, .dropbtn-activity {
+          padding: 0.75em;
+        }
+        .dropbtn{
+          width: 100%;
+        }
+        /* Dropdown content aligns horizontaly for the same reason as above */
+        .dropdown-content a{
+          float: left;
+          padding: 0;
         }
       
         label {
