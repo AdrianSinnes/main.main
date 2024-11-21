@@ -21,12 +21,13 @@ header{
 }
 .topnav li {
   float: left;
+  min-width: 6.5em;
 }
 .topnav li a{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.875em 1em;
   text-decoration: none;
 }
 .topnav li a:hover, .dropdown:hover .dropbtn {
@@ -36,41 +37,38 @@ header{
   background-color: #2d4e74;
 }
 .topnav-logo{
-  height: 40px;
+  width: 4.4em;
+  height: auto;
 }
 /* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only dropdown.
    Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
 
 /* Dropdown button*/
 .dropdown .dropbtn, .dropdown-activity .dropbtn-activity {
-  font-size: 16px;
+  font-size: 1em;
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 0.875em 1em;
   background-color: inherit;
-  font-family: inherit; 
-  margin: 0; 
+  min-width: 11.71em;
 }
 .dropdown-content, .dropdown-content-activity {
   display: none;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content{
   background-color: #3A5F88;
-  min-width: 160px;
   position: absolute;
 }
-
 /* Links inside the dropdown */
 .dropdown-content a, .dropdown-content-activity a {
   float: none;
   color: white;
-  padding: 12px 16px;
+  padding: 0.75em 1em;
   text-decoration: none;
   display: inline-block;
-  text-align: center;
 }
 .dropdown-content a:hover {
   background-color: #ddd;
@@ -82,29 +80,25 @@ header{
 /* Dropdown css specific for activity*/
 .dropdown-activity .dropbtn-activity{
   background: rgba(0, 0, 0, 0.5);
-  min-width: 120px;
+  min-width: 7.5em;
 }
 .dropdown-activity{
   position: fixed;
   z-index: 1;
 }
-.dropdown-content-activity{
-  min-width: 120px;
-}
 .dropdown-content-activity a{
   display: block;
   background: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 .dropdown-content-activity a:hover{
   background-color: #0000001f;
 }
-
 .frontpage-container {
   position: relative;
   overflow: hidden;
   background-color: #000;
 }
-
 /* size on frontpage picture */
 .PictureFrontPage {
     width: 100%;
