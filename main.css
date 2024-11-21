@@ -158,10 +158,12 @@ main {
 }
 /* Styling for the secondary box with width, height, background, and padding */
 .secondary-box {
-    width: 16%;
+    width: 20%;
     height: auto;
-    background-color: rgb(255, 255, 255); 
-    padding: 2%;
+    background-color: rgb(255, 255, 255);
+}
+.secondary-box h3, .secondary-box p{
+  margin-left: 1.5rem;
 }
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
@@ -917,9 +919,12 @@ padding-top: 3em;
     display: grid;
     grid-template-columns: 1fr; 
   }
+  .linkbox{
+    width: 12.5em;
+  }
 }
 
-/* The boxes goes from 4 in the width to 2, or shwitches from 4 columns to 2. and the boxes xhanges size */
+/* The boxes goes from 4 in the width to 2, or shwitches from 4 columns to 2. and the boxes changes size */
 @media (max-width: 1250px){
   .interest-container .grid{
     grid-template-columns: repeat(2, 1fr); 
@@ -1113,11 +1118,6 @@ padding-top: 3em;
 
 /* Table media */
 @media screen and (max-width: 650px) {
-  .table-container {
-    width: 100%;
-    padding: 0.6em;
-  }
-
   table {
     font-size: 1em;
     margin-top: 0.6em;
