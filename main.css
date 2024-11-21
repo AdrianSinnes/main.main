@@ -1008,10 +1008,10 @@ padding-top: 3em;
         margin-left: 4em;
       }
   
-    }
+}
 
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
     /* Changes to one column and changes the gap*/
     .accordion-container, .accessibility-page .accordion-container, .github-page .accordion-container {
       grid-template-columns: 1fr;
@@ -1030,7 +1030,7 @@ padding-top: 3em;
     }
   }
   
-    /* For even smaller screen, switch to 1 column, also changing the gap and the box size*/
+/* For even smaller screen, switch to 1 column, also changing the gap and the box size*/
     @media (max-width: 820px) {
 
       .linkbox {
@@ -1167,7 +1167,6 @@ padding-top: 3em;
   }
 }
 
-
 /*scaling 574px drop down boxes*/
 @media (max-width:574px){
   /*accordion container*/
@@ -1217,50 +1216,7 @@ padding-top: 3em;
           justify-content: center;
       }
   }
-
-  
-
-/*Media for activity page*/
-  @media (max-width: 600px){
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  .flip-card {
-    width: 90%; /* Scales down the card width */
-    height: 300px; /* Scales down the card height */
-    margin: 0 auto; /* Centers the card */
-  }
-
-  .flip-card-inner {
-    width: 100%;
-    height: 100%;
-  }
-
-  .flip-card-front, .flip-card-back {
-    width: 100%; /* Ensures the back matches the card dimensions */
-    height: 100%; /* Matches the card's height */
-    position: absolute; /* Ensures front and back overlap perfectly */
-  }
-
-  .flip-card-back {
-    padding: 1em; /* Adjust padding for smaller content if needed */
-    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
-  }
-
-  .flip-card-title {
-    font-size: 1em; /* Adjust text size */
-  }
-  .text-overlay .activity-h1 {
-    font-size: 2em; /* Reduser fontstørrelsen */
-  }
-  .top-bird-text{
-    font-size: 1.5em;
-  }
-}
-
-
-
-    @media (max-width: 500px){
+@media (max-width: 500px){
       .linkbox{
         width: 300px;
         margin-left: 2em;
@@ -1280,22 +1236,10 @@ padding-top: 3em;
       font-size: 0.7em;
       margin-top: 2em;
     }
-    h3.top-bird-text{
-      font-size: 1.2em;
-    }
-  }
-  
-  /* Activity Media */
-
-  @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
   }
   
   
-  
-  /*media for GitHub paage*/
+  /*only Media for GitHub page*/
 @media (max-width: 768px) {
   .github-page h4,
   .github-page section p,
@@ -1322,4 +1266,54 @@ padding-top: 3em;
     font-size: 1em;
   }
   
+}
+
+/*only Media for activity page*/
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 600px){
+.grid-container {
+  grid-template-columns: 1fr;
+}
+.flip-card {
+  width: 90%; /* Scales down the card width */
+  height: 300px; /* Scales down the card height */
+  margin: 0 auto; /* Centers the card */
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%; /* Ensures the back matches the card dimensions */
+  height: 100%; /* Matches the card's height */
+  position: absolute; /* Ensures front and back overlap perfectly */
+}
+
+.flip-card-back {
+  padding: 1em; /* Adjust padding for smaller content if needed */
+  box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+}
+
+.flip-card-title {
+  font-size: 1em; /* Adjust text size */
+}
+.text-overlay .activity-h1 {
+  font-size: 2em; /* Reduser fontstørrelsen */
+}
+.top-bird-text{
+  font-size: 1.5em;
+}
+}
+
+@media (max-width: 470px){
+h3.top-bird-text{
+      font-size: 1.2em;
+    }
 }
