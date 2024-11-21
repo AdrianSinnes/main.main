@@ -10,6 +10,7 @@ body, html {
 header{
     text-align: center;
     color: white;
+    background-color: #3A5F88;
 }
 /* Navigation bar CSS*/
 .topnav ul {
@@ -17,17 +18,16 @@ header{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3A5F88;
 }
-.topnav li {
-  float: left;
-  min-width: 6.5em;
+.topnav li, .topnav-logo {
+  float: left; /* Horizontal navbar */
 }
 .topnav li a{
-  display: block;
+  min-width: 5em;
+  display: block; /* Horizontal navbar */
   color: white;
   text-align: center;
-  padding: 0.875em 1em;
+  padding: 1.32em 1em;
   text-decoration: none;
 }
 .topnav li a:hover, .dropdown:hover .dropbtn {
@@ -37,24 +37,26 @@ header{
   background-color: #2d4e74;
 }
 .topnav-logo{
-  width: 4.4em;
+  width: 5em;
   height: auto;
+  margin-top: 0.25em;
 }
-/* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only dropdown.
+/* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only a dropdown menu.
    Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
 
 /* Dropdown button*/
-.dropdown .dropbtn, .dropdown-activity .dropbtn-activity {
+.dropbtn, .dropbtn-activity {
   font-size: 1em;
   border: none;
   outline: none;
   color: white;
-  padding: 0.875em 1em;
+  padding: 1.5em 1em;
   background-color: inherit;
   min-width: 11.71em;
+
 }
 .dropdown-content, .dropdown-content-activity {
-  display: none;
+  display: none; /* Hides the content */
   box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -73,7 +75,7 @@ header{
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-/* Show the dropdown menu on hover */
+/* Shows the dropdown menu on hover */
 .dropdown:hover .dropdown-content, .dropdown-activity:hover .dropdown-content-activity {
   display: block;
 }
@@ -83,7 +85,7 @@ header{
   min-width: 7.5em;
 }
 .dropdown-activity{
-  position: fixed;
+  position: fixed; /* Dropdown menu sticks to the top of the page*/
   z-index: 1;
 }
 .dropdown-content-activity a{
@@ -737,24 +739,24 @@ padding-top: 3em;
   transform: translate(-50%, -50%); /* Makes position in center */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 20px 40px;
+  padding: 0.5em 1em;
   border-radius: 8px; /*Makes round corners*/
-  text-align: center;
+  text-align: center; /* Centered text*/
   margin: 0;
-  font-size: 1.8em;
+  font-size: 1.8em; /* p text size */
 }
 
 .text-overlay .activity-h1 {
-  font-size: 3em; /* Set larger font size for activity-h1 */
+  font-size: 3em; /* Set larger font size for heading activity-h1 */
 }
 
 
 
 
 
-/* Content sections between parallax */
+/* Content section between parallax 1 & 2  */
 .contentactivty {
-  padding: 40px;
+  padding: 2em;
   text-align: center;
   background-color: #f4f4f4;
   color: #333;
@@ -766,8 +768,8 @@ padding-top: 3em;
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; 
-  padding: 20px; 
+  gap: 1.3em; 
+  padding: 1.3em; 
 }
 
 /* Individual items */
@@ -790,7 +792,7 @@ padding-top: 3em;
 
 /* Text below each image */
 .text-box {
-  margin-top: 10px; 
+  margin-top: 0.6em; 
   font-size: 1em;
   color: #333; 
 }
@@ -809,7 +811,7 @@ padding-top: 3em;
   display: flex;
   flex-direction: column;
   gap: 4em; /* Avstand mellom boksene */
-  max-width: 800px;
+  max-width: 50em;
   margin: 0 auto; /* Sentrer containeren på siden */
   color: white;
   padding-top: 4em;
@@ -819,7 +821,7 @@ padding-top: 3em;
 }
 
 .flex-box {
-  padding: 20px;
+  padding: 1.2em;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #342812;
@@ -859,9 +861,9 @@ padding-top: 3em;
 
 .flip-card {
   background-color: transparent;
-  width: 500px;
-  height: 300px;
-  perspective: 1000px; 
+  width: 31em;
+  height: 18em;
+  perspective: 63em; 
 
 }
 
@@ -1041,12 +1043,21 @@ padding-top: 3em;
         .accordion-container, .accessibility-page .accordion-container, .github-page .accordion-container {
             gap: 1.5em;
         }
-
-        .topnav li {
-            float:none;
+        /* Goes from horizontal to vertical navbar */
+        .topnav li, .topnav-logo {
+            float: none;
         }
-        .dropdown-content {
-          position: relative;
+        /* Less padding so it covers less of the screen */
+        .topnav li a, .dropbtn, .dropbtn-activity {
+          padding: 0.75em;
+        }
+        .dropbtn{
+          width: 100%;
+        }
+        /* Dropdown content aligns horizontaly for the same reason as above */
+        .dropdown-content a{
+          float: left;
+          padding: 0;
         }
       
         label {
