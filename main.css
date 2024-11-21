@@ -1216,7 +1216,50 @@ padding-top: 3em;
           justify-content: center;
       }
   }
-@media (max-width: 500px){
+
+  
+
+/*Media for activity page*/
+  @media (max-width: 600px){
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .flip-card {
+    width: 90%; /* Scales down the card width */
+    height: 300px; /* Scales down the card height */
+    margin: 0 auto; /* Centers the card */
+  }
+
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flip-card-front, .flip-card-back {
+    width: 100%; /* Ensures the back matches the card dimensions */
+    height: 100%; /* Matches the card's height */
+    position: absolute; /* Ensures front and back overlap perfectly */
+  }
+
+  .flip-card-back {
+    padding: 1em; /* Adjust padding for smaller content if needed */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+  }
+
+  .flip-card-title {
+    font-size: 1em; /* Adjust text size */
+  }
+  .text-overlay .activity-h1 {
+    font-size: 2em; /* Reduser fontstørrelsen */
+  }
+  .top-bird-text{
+    font-size: 1.5em;
+  }
+}
+
+
+
+    @media (max-width: 500px){
       .linkbox{
         width: 300px;
         margin-left: 2em;
