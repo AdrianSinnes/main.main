@@ -1256,6 +1256,15 @@ padding-top: 3em;
   .top-bird-text{
     font-size: 1.5em;
   }
+
+.activity-h4{
+  font-size: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.picture-info{
+  margin-left: 1.7em;
+}
 }
 
 
@@ -1292,7 +1301,6 @@ padding-top: 3em;
       background-attachment: scroll;
     }
   }
-  
   
   
   /*media for GitHub paage*/
