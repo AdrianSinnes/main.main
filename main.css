@@ -171,12 +171,12 @@ main {
     padding: 1.25em; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    min-width: 300px; 
+    min-width: 18.75em; 
     flex: 1;
 }
 .accordion-container{
 display: grid;
-grid-template-columns: 525px 525px;
+grid-template-columns: 32.8em 32.8em;
 gap: 2.5em;
 margin-top: 1.25em;
 }
