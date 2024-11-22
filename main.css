@@ -1,6 +1,12 @@
-/* This is a shared CSS document for index, accessibility, github and activity html. 
+/* This is a shared CSS document for 
+- index
+- accessibility
+- github 
+- activity
+
 There are titles that explain the purpose of each section of the CSS, we have sections for each html.
-The last section at the bottom of the page is all the media queries for all html files.  */
+The last section at the bottom of the page is all the media queries for all html files. 
+Media queries are arranged by wich html it belongs to and by scaling pixel ranges, sorted from largest to smallest. */
 
 /* css For index */
 body, html {
@@ -44,7 +50,6 @@ header{
   width: 5em;
   height: auto;
   margin-top: 0.25em;
-  margin-right: 0.25em;
 }
 /* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only a dropdown menu.
    Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
@@ -176,6 +181,7 @@ main {
     min-width: 18.75em; 
     flex: 1;
 }
+
 .accordion-container{
 display: grid;
 grid-template-columns: 32.8em 32.8em;
@@ -505,7 +511,7 @@ th {
   color: white;
 }
 
-.emnefag-title {
+.subject-title {
   font-weight: bold;
   background-color: #b2d3e7;
   text-align: left;
@@ -685,11 +691,11 @@ text-decoration: none;
 }
 /* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
-  background-image: url('Images/snowowl.jpg');
+  background-image: url('Images/snowowl.png');
 }
 /* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
-  background-image: url('Images/puffin.jpg');
+  background-image: url('Images/puffin.png');
 }
 
 
@@ -1352,7 +1358,7 @@ padding-top: 4em;
   
 }
 
-/*Disables parallax on smaller screens*/
+/*only Media for activity page*/
 @media(max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
