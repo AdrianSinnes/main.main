@@ -670,8 +670,8 @@ text-decoration: none;
 
 
 
-/*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
-/*Parralax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
+/*Parallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
+/*Parallax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
 .parallax {
   height: 100%; /* Full height */
   background-attachment: fixed;
@@ -748,7 +748,7 @@ padding-top: 3em;
 
 
 /* Content section between parallax 1 & 2  */
-.contentactivty {
+.content-activty {
   padding: 2em;
   text-align: center;
   background-color: #f4f4f4;
