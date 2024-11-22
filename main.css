@@ -1,4 +1,4 @@
-/* Removes the standard margin */
+
 body, html {
   margin: 0; 
   height: 100%;
@@ -96,6 +96,7 @@ header{
 .dropdown-content-activity a:hover{
   background-color: #0000001f;
 }
+/*frontpage picture*/
 .frontpage-container {
   position: relative;
   overflow: hidden;
@@ -117,12 +118,6 @@ header{
   position: absolute;
   top: 0;
   left: 0;
-}
-
-
-/* css for body */
-p, h1, h2{
-    font-family: sans-serif;
 }
 
 /* Style for h1, size, position and color */
@@ -150,6 +145,7 @@ h2 {
     position: absolute;
     white-space: normal;
 }
+/**/
 /* Flexbox layout for the main container to arrange children horizontally */
 main {
     display: flex; 
