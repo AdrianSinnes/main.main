@@ -1326,6 +1326,18 @@ padding-top: 3em;
     font-size: 1em;
   }
   
+  /*Scalling parallax text */
+  .parallax-p {
+    font-size: 1.2em; 
+    padding: 0.3em 0.6em; 
+    line-height: 1.2; 
+  }
+  .activity-page-h1 {
+  font-size: 2em;
+  padding: 0.2em 1em ;
+  line-height: 1.5;
+  }
+  
 }
 
 /*only Media for activity page*/
@@ -1377,3 +1389,4 @@ h3.top-bird-text{
       font-size: 1.2em;
     }
 }
+
