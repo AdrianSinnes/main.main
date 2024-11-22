@@ -198,6 +198,7 @@ label {
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 0.1em solid #6a1a66 ;
+    padding-left: 1em;
 }
 
 label:hover {
@@ -818,13 +819,6 @@ padding-top: 3em;
   font-weight: lighter;
 }
 
-.left-box {
-  align-self: flex-start; /* Plasser til venstre */
-}
-
-.right-box {
-  align-self: flex-end; /* Plasser til høyre */
-}
 
 
 .activity-page h4{
@@ -846,7 +840,7 @@ padding-top: 3em;
   gap: 4em; 
   justify-items: center; 
   padding-bottom: 4em;
-  padding-top: 2em;
+padding-top: 4em;
 }
 
 .flip-card {
@@ -901,7 +895,6 @@ padding-top: 3em;
 
 /* Optional: Styling for the back content */
 .flip-card-title {
-  padding-top: 2em;
   font-size: 1.2em;
   margin: 0.62em 0;
   color: black;
