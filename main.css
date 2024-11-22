@@ -416,7 +416,7 @@ margin-bottom: 10px;
   padding-right: 1em;
 }
 
-h6, .bird-watch{ 
+h6, .activity-page h2{ 
   font-size: 2em;
   margin-bottom: 10px;
   color: black;
@@ -707,7 +707,7 @@ text-decoration: none;
 
 
 
-.bird-watch{
+.activity-page h2{
   position: static;
 }
 
@@ -728,7 +728,7 @@ text-decoration: none;
     margin: 0 auto; /* Center the image horizontally */
 }
 
-.top-bird-text{
+.activity-page h3{
   font-size: 2em;
   margin-left: 2em;
 padding-top: 3em;
@@ -736,7 +736,7 @@ padding-top: 3em;
 
 
 /* Text overlay */
-.text-overlay .activity-h1,.fuglp  {
+.text-overlay .activity-page h1,.fuglp  {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -750,7 +750,7 @@ padding-top: 3em;
   font-size: 1.8em;
 }
 
-.text-overlay .activity-h1 {
+.text-overlay .activity-page h1 {
   font-size: 3em; /* Set larger font size for activity-h1 */
 }
 
@@ -841,7 +841,7 @@ padding-top: 3em;
 }
 
 
-.activity-h4{
+.activity-page h4{
   font-size: 2em;
   margin-left: 2em;
   margin-right: 1em;
@@ -1253,11 +1253,11 @@ padding-top: 3em;
   .text-overlay .activity-h1 {
     font-size: 2em; /* Reduser fontstørrelsen */
   }
-  .top-bird-text{
+  .activity-page h3{
     font-size: 1.5em;
   }
 
-.activity-h4{
+.activity-page h4{
   font-size: 1.5em;
   margin-left: 1em;
   margin-right: 1em;
@@ -1289,7 +1289,7 @@ padding-top: 3em;
       font-size: 0.7em;
       margin-top: 2em;
     }
-    h3.top-bird-text{
+    .activity-page h3{
       font-size: 1.2em;
     }
   }
