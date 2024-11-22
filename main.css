@@ -197,6 +197,7 @@ label {
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 0.1em solid #6a1a66 ;
+    padding-left: 1em;
 }
 
 label:hover {
@@ -667,8 +668,8 @@ text-decoration: none;
 
 
 
-/*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
-/*Parralax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
+/*Parallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
+/*Parallax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
 .parallax {
   height: 100%; /* Full height */
   background-attachment: fixed;
@@ -745,7 +746,7 @@ padding-top: 3em;
 
 
 /* Content section between parallax 1 & 2  */
-.contentactivty {
+.content-activty {
   padding: 2em;
   text-align: center;
   background-color: #f4f4f4;
@@ -818,13 +819,6 @@ padding-top: 3em;
   font-weight: lighter;
 }
 
-.left-box {
-  align-self: flex-start; /* Plasser til venstre */
-}
-
-.right-box {
-  align-self: flex-end; /* Plasser til høyre */
-}
 
 
 .activity-page h4{
@@ -846,7 +840,7 @@ padding-top: 3em;
   gap: 4em; 
   justify-items: center; 
   padding-bottom: 4em;
-  padding-top: 2em;
+padding-top: 4em;
 }
 
 .flip-card {
@@ -901,7 +895,6 @@ padding-top: 3em;
 
 /* Optional: Styling for the back content */
 .flip-card-title {
-  padding-top: 2em;
   font-size: 1.2em;
   margin: 0.62em 0;
   color: black;
@@ -924,7 +917,7 @@ padding-top: 3em;
   }
 }
 
-/* The boxes goes from 4 in the width to 2, or shwitches from 4 columns to 2. and the boxes changes size */
+/* The boxes goes from 4 in the width to 2, or switches from 4 columns to 2. and the boxes changes size */
 @media (max-width: 1250px){
   .interest-container .grid{
     grid-template-columns: repeat(2, 1fr); 
@@ -1264,7 +1257,7 @@ padding-top: 3em;
     font-size: 1em; /* Adjust text size */
   }
   .text-overlay .activity-page h1 {
-    font-size: 2em; /* Reduser fontstørrelsen */
+    font-size: 2em; 
   }
   .activity-page h3{
     font-size: 1.5em;
@@ -1343,6 +1336,18 @@ padding-top: 3em;
   .github-page section ul li {
     font-size: 1em;
   }
+
+  /*Scalling parallax text */
+  .parallax-p {
+    font-size: 1.2em; 
+    padding: 0.3em 0.6em; 
+    line-height: 1.2; 
+  }
+  .activity-page-h1 {
+  font-size: 2em;
+  padding: 0.2em 1em ;
+  line-height: 1.5;
+  }
   
 }
 
@@ -1395,3 +1400,4 @@ h3.top-bird-text{
       font-size: 1.2em;
     }
 }
+
