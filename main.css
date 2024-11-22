@@ -521,14 +521,14 @@ th {
     background-color: #3A5F88;
     color: #ffffff;
 }
-.nyhetsbrev{
+.newsletter{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.6em 6.25em;
     gap: 2em;
 }
-.nyhetsbrevButton{
+.newsletterButton{
     padding: 2%;
     background-color: #000000;
     text-decoration: none;
@@ -536,7 +536,7 @@ th {
     color: #fff;
     border-radius: 0.3em;
 }
-.nyhetsbrevButton:hover {
+.newsletterButton:hover {
   background-color: rgba(31, 31, 31, 0.49);
 }
 .footer-line{
@@ -1096,12 +1096,12 @@ padding-top: 4em;
           margin-bottom: 1.8em;
           flex-direction: column;
         }
-        .nyhetsbrev{
+        .newsletterButton{
             flex-direction: column;
             align-items: flex-start;
             max-width:100% ;
         }
-        .nyhetsbrevButton{
+        .newsletterButton{
             margin-top: 10px;
             width: 100%;
         }
@@ -1199,7 +1199,7 @@ padding-top: 4em;
       }
   
   /*footer*/
-      .nyhetsbrev{
+      .newsletter{
        max-width: 90%;
        padding: 1em;
        text-align: center;
@@ -1208,7 +1208,7 @@ padding-top: 4em;
         font-size: 0.9em;
        max-width: 100%;
       }
-      .nyhetsbrevButton{
+      .newsletterButton{
         font-size: 0.9em;
        max-width: 100%;
       }
