@@ -1351,7 +1351,7 @@ padding-top: 4em;
   
 }
 
-/*only Media for activity page*/
+/*Disables parallax on smaller screens*/
 @media(max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
