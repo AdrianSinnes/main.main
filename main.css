@@ -44,6 +44,7 @@ header{
   width: 5em;
   height: auto;
   margin-top: 0.25em;
+  margin-right: 0.25em;
 }
 /* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only a dropdown menu.
    Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
