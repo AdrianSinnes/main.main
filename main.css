@@ -919,7 +919,7 @@ padding-top: 4em;
   }
 }
 
-/* The boxes goes from 4 in the width to 2, or shwitches from 4 columns to 2. and the boxes changes size */
+/* The boxes goes from 4 in the width to 2, or switches from 4 columns to 2. and the boxes changes size */
 @media (max-width: 1250px){
   .interest-container .grid{
     grid-template-columns: repeat(2, 1fr); 
@@ -1259,7 +1259,7 @@ padding-top: 4em;
     font-size: 1em; /* Adjust text size */
   }
   .text-overlay .activity-page h1 {
-    font-size: 2em; /* Reduser fontstørrelsen */
+    font-size: 2em; 
   }
   .activity-page h3{
     font-size: 1.5em;
@@ -1346,6 +1346,18 @@ padding-top: 4em;
   .github-page section ul li {
     font-size: 1em;
   }
+
+  /*Scalling parallax text */
+  .parallax-p {
+    font-size: 1.2em; 
+    padding: 0.3em 0.6em; 
+    line-height: 1.2; 
+  }
+  .activity-page-h1 {
+  font-size: 2em;
+  padding: 0.2em 1em ;
+  line-height: 1.5;
+  }
   
 }
 
@@ -1398,3 +1410,4 @@ h3.top-bird-text{
       font-size: 1.2em;
     }
 }
+
