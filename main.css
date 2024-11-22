@@ -49,11 +49,11 @@ header{
   width: 5em;
   height: auto;
 }
-/* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only a dropdown menu.
-   Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
+/* Dropdown menu. On index displayed inside the navbar. On activity page it is no navbar, only a dropdown menu.
+   Css regarding functionality is mostly shared (some minor adjustments for the activity page - see activity css), while the design is different */
 
 /* Dropdown button*/
-.dropbtn, .dropbtn-activity {
+.dropbtn {
   font-size: 1em;
   border: none;
   outline: none;
@@ -61,20 +61,17 @@ header{
   padding: 1.5em 1em;
   background-color: inherit;
   min-width: 11.71em;
-
 }
-.dropdown-content, .dropdown-content-activity {
+.dropdown-content {
   display: none; /* Hides the content */
   box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.2);
   z-index: 1;
-}
-.dropdown-content{
   background-color: #3A5F88;
   position: absolute;
   color: #FFDA00;
 }
 /* Links inside the dropdown */
-.dropdown-content a, .dropdown-content-activity a {
+.dropdown-content a {
   float: none;
   padding: 0.75em 1em;
   text-decoration: none;
@@ -84,28 +81,10 @@ header{
   background-color: #ddd;
 }
 /* Shows the dropdown menu on hover */
-.dropdown:hover .dropdown-content, .dropdown-activity:hover .dropdown-content-activity {
+.dropdown:hover .dropdown-content {
   display: block;
 }
-/* Dropdown css specific for activity*/
-.dropdown-activity .dropbtn-activity{
-  background: rgba(0, 0, 0, 0.5);
-  min-width: 7.5em;
-  color: white;
-}
-.dropdown-activity{
-  position: fixed; /* Dropdown menu sticks to the top of the page*/
-  z-index: 1;
-}
-.dropdown-content-activity a{
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  color: white;
-}
-.dropdown-content-activity a:hover{
-  background-color: #0000001f;
-}
+
 /*frontpage picture*/
 .frontpage-container {
   position: relative;
@@ -700,7 +679,29 @@ text-decoration: none;
   background-image: url('Images/puffin.png');
 }
 
-
+/* Dropdown css adjustments for activity*/
+.activity-page .dropbtn {
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 7.5em;
+  color: white;
+}
+.activity-page .dropdown {
+  position: fixed; /* Dropdown menu sticks to the top of the page*/
+  z-index: 1;
+}
+.activity-page .dropdown-content {
+  background-color: inherit;
+  color:white;
+}
+.activity-page .dropdown-content a{
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+}
+.activity-page .dropdown-content a:hover, .activity-page .dropdown:hover .dropbtn {
+  background-color: #00000057;
+}
 
 .activity-page h2{
   position: static;
@@ -1044,16 +1045,15 @@ padding-top: 4em;
             float: none;
         }
         /* Less padding so it covers less of the screen */
-        .topnav li a, .dropbtn, .dropbtn-activity {
+        .topnav li a, .dropbtn {
           padding: 0.75em;
         }
         .dropbtn{
           width: 100%;
         }
         /* Dropdown content aligns horizontaly for the same reason as above */
-        .dropdown-content a{
+        .topnav .dropdown-content a{
           float: left;
-          padding: 0;
         }
       
         label {
@@ -1171,6 +1171,10 @@ padding-top: 4em;
 
 /*scaling 574px drop down boxes*/
 @media (max-width:574px){
+
+  .topnav .dropdown-content a{
+  padding: 0.4em;
+  }
   /*accordion container*/
       .accordion-container, .accessibility-page .accordion-container, .github-page .accordion-container {
           grid-template-columns: 1fr; 
