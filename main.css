@@ -170,7 +170,7 @@ main {
     height: auto; 
     background-color: #3A5F88;
     padding: 1.25em; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     min-width: 18.75em; 
     flex: 1;
@@ -195,7 +195,7 @@ label {
     color: #000000;
     transition: color 0.3s ease;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25em 0.38em rgba(0, 0, 0, 0.1);
     border: 0.1em solid #6a1a66 ;
     padding-left: 1em;
 }
@@ -367,7 +367,7 @@ margin-bottom: 0.6em;
   /* applies a subtle box shadow effect when the user hovers over a link box */
   .linkbox:hover {
     transform: scale(1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
   }
   /* slightly reduces the size of the link box when clicked */
   .linkbox:active {
@@ -459,8 +459,8 @@ h6, .activity-page h2{
   margin: 1.25em auto;
   background-color: white;
   padding: 1.25em;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
 
 
 }
@@ -658,9 +658,9 @@ text-decoration: none;
 }
 .github-page section ul li {
   background-color: #ecf0f1; 
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px; 
+  margin-bottom: 0.625em;
+  padding: 0.625em;
+  border-radius: 0.3em; 
 }
 
 
@@ -732,7 +732,7 @@ padding-top: 3em;
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 0.5em 1em;
-  border-radius: 8px; /*Makes round corners*/
+  border-radius: 0.5em; /*Makes round corners*/
   text-align: center; /* Centered text*/
   margin: 0;
   font-size: 1.8em; /* p text size */
@@ -814,7 +814,7 @@ padding-top: 3em;
 .flex-box {
   padding: 1.2em;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 0.5em;
   background-color: #342812;
   font-weight: lighter;
 }
@@ -1071,7 +1071,7 @@ padding-top: 4em;
         .contact-section {
             width: 98.5%;
             padding: 1.5%; 
-            margin-top: 20px; 
+            margin-top: 1.25em; 
         }
     
         .profile-image {
@@ -1100,7 +1100,7 @@ padding-top: 4em;
             max-width:100% ;
         }
         .newsletterButton{
-            margin-top: 10px;
+            margin-top: 0.625em;
             width: 100%;
         }
       h1 {
@@ -1117,7 +1117,7 @@ padding-top: 4em;
 }
 
 /* Table media */
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
   table {
     font-size: 1em;
     margin-top: 0.6em;
@@ -1188,12 +1188,12 @@ padding-top: 4em;
           font-size: 0.9em;
       }
       .profile-image {
-          width: 100px;
-          height: 100px;
+          width: 6.25em;
+          height: 6.25em;
       }
   /*interest boxes*/
       .linkbox {
-          width: 400px
+          width: 25em
       }
   
   /*footer*/
@@ -1216,7 +1216,7 @@ padding-top: 4em;
       }
       .footer-col{
           width: 100%;
-          margin-bottom: 30px;
+          margin-bottom: 1.875em;
       }
       .social-links{
           justify-content: center;
@@ -1233,7 +1233,7 @@ padding-top: 4em;
   }
   .flip-card {
     width: 90%; /* Scales down the card width */
-    height: 300px; /* Scales down the card height */
+    height: 18.75em; /* Scales down the card height */
     margin: 0 auto; /* Centers the card */
   }
 
