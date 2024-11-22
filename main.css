@@ -722,7 +722,7 @@ padding-top: 3em;
 
 
 /* Text overlay */
-.text-overlay .activity-page h1,.fuglp  {
+.text-overlay .activity-page-h1,.parallax-p  {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -736,10 +736,9 @@ padding-top: 3em;
   font-size: 1.8em; /* p text size */
 }
 
-.text-overlay .activity-page h1 {
+.text-overlay .activity-page-h1 {
   font-size: 3em; /* Set larger font size for activity-h1 */
 }
-
 
 
 
