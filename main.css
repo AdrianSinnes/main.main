@@ -1,4 +1,8 @@
+/* This is a shared CSS document for index, accessibility, github and activity html. 
+There are titles that explain the purpose of each section of the CSS, we have sections for each html.
+The last section at the bottom of the page is all the media queries for all html files.  */
 
+/* css For index */
 body, html {
   margin: 0; 
   height: 100%;
@@ -660,9 +664,7 @@ text-decoration: none;
 }
 
 
-/*Activity html*/
-
-
+/*Activity css*/
 
 /*Parallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
 /*Parallax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
@@ -1040,7 +1042,6 @@ padding-top: 4em;
       
         label {
           font-size: 1em; 
-          padding-left: 0.3em;
           padding-top: 1.5em;
           padding-bottom: 1.5em;
         }
