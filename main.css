@@ -375,7 +375,6 @@ margin-bottom: 0.6em;
 
 
 /*css for students history*/ 
-
 /* Main container with CSS Grid */
 .container-student {
   display: grid;
@@ -407,14 +406,14 @@ h6, .activity-page h2{
 .historylink {
   font-size: 1.5em;
   color: black; 
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   font-weight: bold;
 }
 .text-section p {
   font-size: 1rem;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.6em;
   color: black;
 }
 
@@ -422,8 +421,8 @@ h6, .activity-page h2{
 
 .historyButton {
   padding: 2%;
-  background-color:black;
-  color: white;
+  background-color:#000;
+  color: #fff;
   border-radius: 0.3em;
   cursor: pointer;
   font-size: 1em;
@@ -433,7 +432,6 @@ h6, .activity-page h2{
   font-weight: bold;
   text-align: center;
   margin-bottom: 2em;
-  margin-top: 1em;
 }
 
 .historyButton:hover {
@@ -500,7 +498,7 @@ th {
   color: white;
 }
 
-.emnefag-title {
+.subject-title {
   font-weight: bold;
   background-color: #b2d3e7;
   text-align: left;
@@ -510,18 +508,19 @@ th {
 
 /*css for footer */
 .footer{
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 3.125em;
     background-color: #3A5F88;
     color: #ffffff;
 }
 .newsletter{
+.newsletter{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.6em 6.25em;
-    gap: 2em;
 }
+.newsletterButton{
 .newsletterButton{
     padding: 2%;
     background-color: #000000;
@@ -530,6 +529,7 @@ th {
     color: #fff;
     border-radius: 0.3em;
 }
+.newsletterButton:hover {
 .newsletterButton:hover {
   background-color: rgba(31, 31, 31, 0.49);
 }
@@ -561,10 +561,9 @@ text-decoration: none;
 }
 .footer-col{
     flex: 1 1 10%;
-    box-sizing: border-box;
     list-style: none;
     padding: 0.6em 6.25em;
-    width: 50%;
+    width: 50%; 
     margin: 0;
 }
 .oslomet-logo-footer{
@@ -662,10 +661,8 @@ text-decoration: none;
 
 /*Activity html*/
 
-
-
-/*Parallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
-/*Parallax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
+/*Parrallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
+/*Parralax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
 .parallax {
   height: 100%; /* Full height */
   background-attachment: fixed;
@@ -715,12 +712,12 @@ text-decoration: none;
 .activity-page h3{
   font-size: 2em;
   margin-left: 2em;
-padding-top: 3em;
+  padding-top: 3em;
 }
 
 
 /* Text overlay */
-.text-overlay .activity-page-h1,.parallax-p  {
+.text-overlay .activity-page h1,.fuglp  {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -734,10 +731,9 @@ padding-top: 3em;
   font-size: 1.8em; /* p text size */
 }
 
-.text-overlay .activity-page-h1 {
+.text-overlay .activity-page h1 {
   font-size: 3em; /* Set larger font size for activity-h1 */
 }
-
 
 
 
@@ -770,7 +766,8 @@ padding-top: 3em;
 .round-image {
   width: 100%; 
   max-width: 9.3em; 
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;  /* Aspect-ratio: 1 / 1 ensures the image is a perfect square. 
+  The border-radius: 50% then makes it appear circular. */
   border-radius: 50%;
   object-fit: cover; 
   margin: 0 auto; 
@@ -816,7 +813,6 @@ padding-top: 3em;
 }
 
 
-
 .activity-page h4{
   font-size: 2em;
   margin-left: 2em;
@@ -836,7 +832,7 @@ padding-top: 3em;
   gap: 4em; 
   justify-items: center; 
   padding-bottom: 4em;
-padding-top: 4em;
+  padding-top: 4em;
 }
 
 .flip-card {
@@ -871,7 +867,7 @@ padding-top: 4em;
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+
 .flip-card-front img {
   width: 100%;    
   height: 100%;  
@@ -913,7 +909,7 @@ padding-top: 4em;
   }
 }
 
-/* The boxes goes from 4 in the width to 2, or switches from 4 columns to 2. and the boxes changes size */
+/* The boxes goes from 4 in the width to 2, or shwitches from 4 columns to 2. and the boxes changes size */
 @media (max-width: 1250px){
   .interest-container .grid{
     grid-template-columns: repeat(2, 1fr); 
@@ -1084,19 +1080,16 @@ padding-top: 4em;
     
     /*scaling footer*/
         .footer-col{
-          flex: 1 1 100%;
-          padding: 1em;
-          width: 100%;
-          margin-bottom: 1.8em;
-          flex-direction: column;
+            width: 100%;
+            margin-bottom: 30px;
+            flex-direction: column;
         }
-        .newsletterButton{
+        .newsletter{
             flex-direction: column;
             align-items: flex-start;
-            max-width:100% ;
         }
         .newsletterButton{
-            margin-top: 0.625em;
+            margin-top: 10px;
             width: 100%;
         }
       h1 {
@@ -1132,7 +1125,7 @@ padding-top: 4em;
     padding: 1em;
   }
 
-  .emnefag-title {
+  .subject-title {
     padding: 0.5em;
   }
 
@@ -1193,19 +1186,6 @@ padding-top: 4em;
       }
   
   /*footer*/
-      .newsletter{
-       max-width: 90%;
-       padding: 1em;
-       text-align: center;
-      }
-      .footer-heading{
-        font-size: 0.9em;
-       max-width: 100%;
-      }
-      .newsletterButton{
-        font-size: 0.9em;
-       max-width: 100%;
-      }
       .footer-row{
           flex-direction: column;
           align-items: center;
@@ -1216,7 +1196,6 @@ padding-top: 4em;
       }
       .social-links{
           justify-content: center;
-          max-width: 100%;
       }
   }
 
@@ -1253,7 +1232,7 @@ padding-top: 4em;
     font-size: 1em; /* Adjust text size */
   }
   .text-overlay .activity-page h1 {
-    font-size: 2em; 
+    font-size: 2em; /* Reduser fontstørrelsen */
   }
   .activity-page h3{
     font-size: 1.5em;
@@ -1294,14 +1273,13 @@ padding-top: 4em;
     .activity-page h3{
       font-size: 1.2em;
     }
-    .profile-container{
-      padding: 1em;
-    }
-    .contact-section-heading{
-      font-size: 1.5em;
-    }
-    .social-links{
-      font-size: 0.7em;
+  }
+  
+  /* Activity Media */
+
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
     }
   }
   
@@ -1331,18 +1309,6 @@ padding-top: 4em;
 
   .github-page section ul li {
     font-size: 1em;
-  }
-
-  /*Scalling parallax text */
-  .parallax-p {
-    font-size: 1.2em; 
-    padding: 0.3em 0.6em; 
-    line-height: 1.2; 
-  }
-  .activity-page-h1 {
-  font-size: 2em;
-  padding: 0.2em 1em ;
-  line-height: 1.5;
   }
   
 }
@@ -1396,4 +1362,3 @@ h3.top-bird-text{
       font-size: 1.2em;
     }
 }
-
