@@ -11,8 +11,8 @@
 <body class="accessibility-page">
     <header> <!-- Navigation bar-->
         <nav class="topnav">
+            <a href="https://www.oslomet.no/"><img src="images/oslomet-logo.png" alt="OsloMet - Logo" class="topnav-logo"></a>
             <ul>
-                <li><img src="images/oslomet-logo.png" alt="OsloMet - Logo" class="topnav-logo"></li>
                 <li><a href="index.html">MatMod</a></li>
                 <li><a href="accessibility.html" class="active">Accessibility</a></li>
                 <li><a href="github.html">Github</a></li>
@@ -23,70 +23,61 @@
       <!-- Front page picture. H1 and H2 is the title -->
       <div class="frontpage-container">
         <div class="gradient"></div>
-          <img src="images/lighthouse-test-second.png" alt="Hoved Bilde" class="PictureFrontPage">
+          <img src="images/lighthouse-test-second.png" alt="Lighthouse test sammendrag" class="PictureFrontPage">
           <h1>Accessibility</h1>
           <h2>Våre valg</h2>
-      </div>
-       
+      </div>   
 <main class="accessibility-main">
-    <article>
-        <div class="secondary-box">
-    
-    <h3>Kort info om nettsiden</h3>
-    <hr>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veritatis officiis facilis. Repudiandae modi, enim ab facere dicta voluptatibus nihil iusto! Odit recusandae deleniti distinctio sequi velit id minus facere.</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veritatis officiis facilis. Repudiandae modi, enim ab facere dicta voluptatibus nihil iusto! Odit recusandae deleniti distinctio sequi velit id minus facere.</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veritatis officiis facilis. Repudiandae modi, enim ab facere dicta voluptatibus nihil iusto! Odit recusandae deleniti distinctio sequi velit id minus facere.</p>
-</div>
-<div class="main-box">
+    <article class="secondary-box">
+        <h3>Kort info om nettsiden</h3>
+        <hr>
+            <p>Vi har valgt å designe nettsiden på en måte som utnytter plassen horisontalt på en bedre måte enn utgangspunktet. Ved å plassere den generelle informasjonen om studiet til venstre, og den mer spesifikke informasjon i klikkbare bokser til høyre, slipper brukeren å scrolle unødvendig mye, samt brukeren kan også selv velge klikke på hva hen ønsker å lese mer om. Vi har separert ut delen om studiets oppbygning og plassert den i en egen nedenfor, hvor brukeren på samme måte kan klikke på hvilket studieår hen ønsker å lese om. Ved å klikke får brukeren opp en tabell med informasjon om studieåret som er ryddig og sortert etter semester og emnegrupper. Til slutt har vi også gjort noe liknende med delen om relaterte studier, hvor utgangspunktet hadde de listet opp på en lang kolonne. </p> 
+            <p>En annen rød tråd på nettsiden vår er at vi tydelig har markert for brukeren når det er mulig å klikke på noe. Alt fra navigasjonsmenyen øverst, de ulike klikkbare boksene underveis og til footeren har en effekt (fargeendring osv.) hvor det skjer noe når musen beveger seg over som man også kan se på denne siden.</p>
+            <p>Vi har brukt semantiske elementer der det er logisk for å strukturere koden vår på en best mulig måte. På <a href="https://www.w3schools.com/">https://www.w3schools.com/</a> finnes det veldig mange gode eksempler på kode, og flere av de bruker div. Kodene vi har funnet/blitt inspirert av her (og andre steder), har vi forsøkt å gjøre vår egen ved å benytte semantiske elementer der det har latt seg gjøre og tilpasse etter hva vi ønsker den skal utføre. </p>
+        </article>
+<article class="main-box">
     <h3>Automatiserte tester</h3>
         <div class="accordion-container">
             <div class="box">
                 <input type="checkbox" id="title1" />
-                <label for="title1">1. test</label>
+                <label for="title1">Testeksempel 1</label>
                 <div class="content">
-                    <img src="images/lighthouse-test-first.png" alt="Første test">
+                    <img src="images/lighthouse-test-first.png" alt="Lighthosue første test">
+                    <img src="images/lighthouse-accesibility-test1.png" alt="Tilbakemelding på manglende tekst ved logo">
                 </div>
             </div>
             <div class="box">
                 <input type="checkbox" id="title2" />
-                <label for="title2">Tilbakemeldinger 1. test</label>
+                <label for="title2">Forklaring 1</label>
                 <div class="content">
-                    <img src="images/lighthouse-accesibility-test1.png" alt="Tilbakemelding-1">
-                    <p>Da vi hadde kommet et godt stykke med de mest sentralene delene av index siden kjørte vi en automatisert test for å få en objektiv vurdering/pekepinn på hvordan siden vår responderer i praksis.</p>
+                    <p>Da vi hadde kommet et godt stykke med de mest sentralene delene av index-siden kjørte vi en automatisert test for å få en objektiv vurdering/pekepinn på hvordan siden vår responderer i praksis.</p>
                     <p>Dette var nyttig for oss da vi i dette eksempelet fikk en tilbakemelding på at en tekst ved sosiale medier logoene vil være nyttig for brukeropplevelsen til "screen readers"</p>
-                    <img src="images/lighthouse-accesibility-test2.png" alt="Tilbakemelding-2">
-                    <p>I dette eksempelet ble vi observante på at svart tekst på den blå bakgrunnsfargen kan være utfordrende, kanskje til og med umulig for noen, å lese. Dette var noe vi hadde diskutert tidligere og planlagt å endre, men som vi fort kunne ha glemt.</p>
-                    <p>Vi fikk også en tilbakemelding på footeren vår der de ulike lenkene hadde for lite mellomrom som gjorde det utfordrende for mobil brukere.</p>
                 </div>
             </div>
             <div class="box">
                 <input type="checkbox" id="title3" />
-                <label for="title3">2. test</label>
+                <label for="title3">Testeksempel 2</label>
                 <div class="content">
-                    <img src="images/lighthouse-test-second.png" alt="Andre test">
+                    <img src="images/lighthouse-accesibility-test2.png" alt="Lighthouse test tilbakemelding på tekstfarge">
+                    <img src="images/lighthouse-spacing.png" alt="Lightouse test tilbakemelding på spacing">
                 </div>
             </div>
             <div class="box">
                 <input type="checkbox" id="title4" />
-                <label for="title4">Tilbakemeldinger 2. test</label>
+                <label for="title4">Forklaring 2</label>
                 <div class="content">
-                    <img src="images/lighthouse-accesibility-test100.png" alt="Tilbakemelding-100 score">
-                    <p>Med disse endringene vi gjorde ut i fra den første automatiserte testen gikk vi fra en accessibility score på 69 til 100! Selv om man skal ta disse resultatene med en klype salt, viser det at endringene vi gjorde basert på tilbakemeldingene vi fikk hadde en positiv effekt.</p>
+                    <p>I dette eksempelet ble vi observante på at svart tekst på den blå bakgrunnsfargen kan være utfordrende, kanskje til og med umulig for noen, å lese. Dette var noe vi hadde diskutert tidligere og planlagt å endre, men som vi fort kunne ha glemt. I tillegg fikk en tilbakemelding på at vi burde gå over css og komprimere det mer for å forbedre ytelsen.</p>
+                    <p>Vi fikk også en tilbakemelding på footeren vår der de ulike lenkene hadde for lite mellomrom som gjorde det utfordrende for mobil brukere.</p>
                 </div>
             </div>
         </div>
-</div>
-
-
     </article>
-</main>
-<div class="table-container">
+<section class="table-container">
     <h4>Til slutt</h4>
     <div class="content">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias possimus commodi magnam totam placeat aliquid modi aliquam provident, debitis vel earum consectetur accusamus laborum veritatis ipsum, voluptatem obcaecati itaque quo!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta doloribus ea ratione molestias asperiores, aspernatur quae porro commodi, soluta dolorum hic ut qui beatae. Quidem doloribus expedita reiciendis facere!</p>
+        <p>Med disse endringene vi gjorde ut i fra de automatiserte testene samt generelt arbeid og forbedring underveis gikk vi fra en accessibility score på 69 til 100! Selv om man skal ta disse resultatene med en klype salt, viser det at endringene vi gjorde basert på tilbakemeldingene vi fikk hadde en positiv effekt.</p>
         </div>
-</div>
-    </body>
+    </section>
+</main>
+</body>
 </html>
