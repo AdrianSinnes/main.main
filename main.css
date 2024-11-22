@@ -514,7 +514,7 @@ th {
 
 /*css for footer */
 .footer{
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 3.125em;
     background-color: #3A5F88;
     color: #ffffff;
@@ -524,6 +524,7 @@ th {
     justify-content: space-between;
     align-items: center;
     padding: 0.6em 6.25em;
+    gap: 2em;
 }
 .nyhetsbrevButton{
     padding: 2%;
@@ -564,9 +565,10 @@ text-decoration: none;
 }
 .footer-col{
     flex: 1 1 10%;
+    box-sizing: border-box;
     list-style: none;
     padding: 0.6em 6.25em;
-    width: 50%; 
+    width: 50%;
     margin: 0;
 }
 .oslomet-logo-footer{
@@ -1095,13 +1097,16 @@ padding-top: 3em;
     
     /*scaling footer*/
         .footer-col{
-            width: 100%;
-            margin-bottom: 30px;
-            flex-direction: column;
+          flex: 1 1 100%;
+          padding: 1em;
+          width: 100%;
+          margin-bottom: 1.8em;
+          flex-direction: column;
         }
         .nyhetsbrev{
             flex-direction: column;
             align-items: flex-start;
+            max-width:100% ;
         }
         .nyhetsbrevButton{
             margin-top: 10px;
@@ -1201,6 +1206,19 @@ padding-top: 3em;
       }
   
   /*footer*/
+      .nyhetsbrev{
+       max-width: 90%;
+       padding: 1em;
+       text-align: center;
+      }
+      .footer-heading{
+        font-size: 0.9em;
+       max-width: 100%;
+      }
+      .nyhetsbrevButton{
+        font-size: 0.9em;
+       max-width: 100%;
+      }
       .footer-row{
           flex-direction: column;
           align-items: center;
@@ -1211,6 +1229,7 @@ padding-top: 3em;
       }
       .social-links{
           justify-content: center;
+          max-width: 100%;
       }
   }
 
@@ -1287,6 +1306,15 @@ padding-top: 3em;
     }
     .activity-page h3{
       font-size: 1.2em;
+    }
+    .profile-container{
+      padding: 1em;
+    }
+    .contact-section-heading{
+      font-size: 1.5em;
+    }
+    .social-links{
+      font-size: 0.7em;
     }
   }
   
