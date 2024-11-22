@@ -19,7 +19,6 @@ body, html {
 }
 header{
     text-align: center;
-    color: white;
     background-color: #3A5F88;
 }
 /* Navigation bar CSS*/
@@ -35,7 +34,7 @@ header{
 .topnav li a{
   min-width: 5em;
   display: block; /* Horizontal navbar */
-  color: white;
+  color: #FFDA00;
   text-align: center;
   padding: 1.32em 1em;
   text-decoration: none;
@@ -49,7 +48,6 @@ header{
 .topnav-logo{
   width: 5em;
   height: auto;
-  margin-top: 0.25em;
 }
 /* Dropdown menu. On index displayed inside navbar. On activity page it is no navbar, only a dropdown menu.
    Css regarding functionality is mostly shared (some minor adjustments for the activity page), while the design is different */
@@ -59,7 +57,7 @@ header{
   font-size: 1em;
   border: none;
   outline: none;
-  color: white;
+  color: #FFDA00;
   padding: 1.5em 1em;
   background-color: inherit;
   min-width: 11.71em;
@@ -73,11 +71,11 @@ header{
 .dropdown-content{
   background-color: #3A5F88;
   position: absolute;
+  color: #FFDA00;
 }
 /* Links inside the dropdown */
 .dropdown-content a, .dropdown-content-activity a {
   float: none;
-  color: white;
   padding: 0.75em 1em;
   text-decoration: none;
   display: inline-block;
@@ -93,6 +91,7 @@ header{
 .dropdown-activity .dropbtn-activity{
   background: rgba(0, 0, 0, 0.5);
   min-width: 7.5em;
+  color: white;
 }
 .dropdown-activity{
   position: fixed; /* Dropdown menu sticks to the top of the page*/
@@ -102,6 +101,7 @@ header{
   display: block;
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
+  color: white;
 }
 .dropdown-content-activity a:hover{
   background-color: #0000001f;
@@ -524,7 +524,7 @@ th {
     font-size: 1em;
     padding: 3.125em;
     background-color: #3A5F88;
-    color: #ffffff;
+    color: #FFDA00;
 }
 .newsletter{
     display: flex;
@@ -559,7 +559,7 @@ th {
     padding: 0.625em;
 }
 .social-links a {
-color: rgb(255, 255, 255);
+color: #FFDA00;
 font-size: 1em;
 text-decoration: none;
 }
@@ -600,10 +600,13 @@ text-decoration: none;
 .footer-heading{
     font-size: 1.2em;
     margin-bottom: 0.6em;
-}   
+}
+.newsletter .footer-heading {
+  color: white;
+}
 .footer-col ul li a{
     font-size: 1em;
-    color: #ffffff;
+    color: #FFDA00;
     display: block;
     transition: all 0.3s ease;
     padding: 0.6em;
@@ -612,7 +615,6 @@ text-decoration: none;
 .footer-col ul li a:hover{
   text-decoration: none;
 }
-
 /* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary */
 .accessibility-page, .github-page{
   text-align: center;
