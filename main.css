@@ -413,14 +413,14 @@ h6, .activity-page h2{
 .historylink {
   font-size: 1.5em;
   color: black; 
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   font-weight: bold;
 }
 .text-section p {
   font-size: 1rem;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.1em;
   color: black;
 }
 
@@ -428,8 +428,8 @@ h6, .activity-page h2{
 
 .historyButton {
   padding: 2%;
-  background-color:#000;
-  color: #fff;
+  background-color:black;
+  color: white;
   border-radius: 0.3em;
   cursor: pointer;
   font-size: 1em;
@@ -439,6 +439,7 @@ h6, .activity-page h2{
   font-weight: bold;
   text-align: center;
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 .historyButton:hover {
@@ -723,7 +724,7 @@ padding-top: 3em;
 
 
 /* Text overlay */
-.text-overlay .activity-page h1,.fuglp  {
+.text-overlay .activity-page-h1,.parallax-p  {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -737,10 +738,9 @@ padding-top: 3em;
   font-size: 1.8em; /* p text size */
 }
 
-.text-overlay .activity-page h1 {
+.text-overlay .activity-page-h1 {
   font-size: 3em; /* Set larger font size for activity-h1 */
 }
-
 
 
 
