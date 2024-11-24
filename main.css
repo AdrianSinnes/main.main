@@ -967,6 +967,10 @@ padding-top: 4em;
           width: 100%;
           height: auto;
       }
+      .frontpage-container p {
+        top: 84%;
+        width: 80%;
+      }
 
 /* Changes the width of the interest linkboxes*/
     .linkbox{
@@ -981,9 +985,6 @@ padding-top: 4em;
   }
   h2{
     font-size: 2em;
-  }
-  .frontpage-container p {
-    font-size: 0.75rem;
   }
   .profile-container{
     font-size: 0.8em;
@@ -1136,8 +1137,8 @@ padding-top: 4em;
         margin-top: 1.8em;
       }
       .frontpage-container p {
+        font-size: 0.75rem;
         top: 80%;
-        width: 80%;
       }
        h5{
     font-size: 2.2em;
