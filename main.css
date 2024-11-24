@@ -543,7 +543,7 @@ font-size: 1em;
 text-decoration: none;
 }
 .social-links a:hover{
-  color: black;
+  color: white;
   transition: 0.3s ease;
 }
 .social-links i{
@@ -909,6 +909,13 @@ padding-top: 4em;
 }
 
 /* Media query */
+/* Media for ultrawide screen */
+@media (min-width: 2000px) {
+  .accordion-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* Swtitches to 1 column when page shrinks to 1400px */
 @media (max-width: 1400px) {
