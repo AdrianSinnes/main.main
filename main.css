@@ -925,7 +925,7 @@ padding-top: 4em;
 /* Media for ultrawide screen */
 @media (min-width:2400px){
   body{
-  font-size: 30px;
+  font-size: 1.875em;
   }
 }
 @media (min-width: 2000px) {
