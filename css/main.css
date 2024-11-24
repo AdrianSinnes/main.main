@@ -17,6 +17,7 @@ body, html {
   color:#000;
   line-height: 1.5;
 }
+
 header{
     text-align: center;
     background-color: #3A5F88;
@@ -606,6 +607,10 @@ text-decoration: none;
 }
 /* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary.
    Aside to display on top instead of left*/
+   .accessibility-page .table-container .content{
+    margin-bottom: 2em;
+   }
+
 .accessibility-page, .github-page{
   text-align: center;
 }
@@ -661,6 +666,7 @@ text-decoration: none;
 
 
 /*Activity css*/
+
 
 /*Parallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
 /*Parallax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
@@ -1394,7 +1400,6 @@ padding-top: 4em;
   .activity-page-h1 {
   font-size: 2em;
   padding: 0.2em 1em ;
-  line-height: 1.5;
   }
   
 }
