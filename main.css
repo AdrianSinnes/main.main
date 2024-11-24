@@ -672,11 +672,11 @@ text-decoration: none;
 }
 /* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
-  background-image: url('Images/snowowl.png');
+  background-image: url('Images/snowowl.jpg');
 }
 /* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
-  background-image: url('Images/puffin.png');
+  background-image: url('Images/puffin.jpg');
 }
 
 /* Dropdown css adjustments for activity*/
