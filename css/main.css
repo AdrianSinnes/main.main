@@ -91,6 +91,25 @@ header{
   overflow: hidden;
   background-color: #000;
 }
+
+.frontpage-container p {
+  left: 0;
+  top: 54%;
+  width: 15%;
+  color: rgb(255, 255, 255);
+  padding-left: 5%;
+  padding-right: 5%;
+  position: absolute;
+  white-space: normal;
+  font-size: 1rem;
+  font-weight: bold;
+
+  background-color: #2d4e74;
+  margin-left: 2em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
 /* size on frontpage picture */
 .PictureFrontPage {
     width: 100%;
@@ -122,7 +141,7 @@ h1 {
     white-space: normal;
 }
 
-/* Style for h2, size, pisition and color */
+/* Style for h2, size, position and color */
 h2 {
     top: 4em;
     left: 0;
@@ -134,20 +153,8 @@ h2 {
     position: absolute;
     white-space: normal;
 }
-.frontpage-container p {
-  left: 0;
-  top: 54%;
-  width: 15%;
-  color: rgb(255, 255, 255);
-  padding-left: 5%;
-  padding-right: 5%;
-  position: absolute;
-  white-space: normal;
-  font-size: 1rem;
-  font-weight: bold;
-}
 
-/**/
+
 /* Flexbox layout for the main container to arrange children horizontally */
 main {
     display: flex; 
@@ -227,16 +234,10 @@ input:checked + label + .content {
 padding-bottom: 3em;
   }
 
-  
-
   h4{
     font-weight: bold;
     font-size: 1.5em;
   }
-
-  
-
-
 
 .profile-container{
     display: flex;
@@ -374,11 +375,7 @@ margin-bottom: 0.6em;
   }
 
 
-
-
-
 /*css for students history*/ 
-
 /* Main container with CSS Grid */
 .container-student {
   display: grid;
@@ -607,7 +604,8 @@ text-decoration: none;
 .footer-col ul li a:hover{
   text-decoration: none;
 }
-/* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary */
+/* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary.
+   Aside to display on top instead of left*/
 .accessibility-page, .github-page{
   text-align: center;
 }
@@ -617,9 +615,6 @@ text-decoration: none;
 .accessibility-page .main-box h3, .github-page .main-box h3{
   color: white;
   font-size: 1.5em;
-}
-.accessibility-page article {
-  display: block;
 }
 .accessibility-page .main-box, .accessibility-main img, .github-page .main-box, .github-main img{
   width: 100%;
@@ -681,15 +676,15 @@ text-decoration: none;
 /* Individual parallax images */
 /* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
 .parallax1 {
-  background-image: url('images/fuglekikking.png'); 
+  background-image: url("../images/fuglekikking.png"); 
 }
 /* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
-  background-image: url('images/snowowl.jpg');
+  background-image: url("../images/snowowl.jpg");
 }
 /* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
-  background-image: url('images/puffin.jpg');
+  background-image: url("../images/puffin.jpg");
 }
 
 /* Dropdown css adjustments for activity*/
@@ -703,7 +698,7 @@ text-decoration: none;
   z-index: 1;
 }
 .activity-page .dropdown-content {
-  background-color: inherit;
+  background-color: inherit;  /* makes the dropdown menu the same color as button */
   color:white;
 }
 .activity-page .dropdown-content a{
@@ -740,7 +735,7 @@ text-decoration: none;
 .activity-page h3{
   font-size: 2em;
   margin-left: 2em;
-padding-top: 3em;
+  padding-top: 3em;
 }
 
 
@@ -753,10 +748,10 @@ padding-top: 3em;
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 0.5em 1em;
-  border-radius: 0.5em; /*Makes round corners*/
-  text-align: center; /* Centered text*/
+  border-radius: 0.5em; 
+  text-align: center;
   margin: 0;
-  font-size: 1.8em; /* p text size */
+  font-size: 1.8em; 
 }
 
 .text-overlay .activity-page-h1 {
@@ -795,7 +790,7 @@ padding-top: 3em;
 .round-image {
   width: 100%; 
   max-width: 9.3em; 
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;  /* Makes the image a square before rounding */
   border-radius: 50%;
   object-fit: cover; 
   margin: 0 auto; 
@@ -851,10 +846,12 @@ padding-top: 3em;
   margin-left: 4.1em;
 }
 
-/* <!-- Base code found here: https://www.w3schools.com/howto/howto_css_flip_card.asp --> */
+/*Base code found here: https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+  /* Styles the title text for the flip card */
 .flip-card-title{
   font-size: 1em;
 }
+/* Defines a grid layout to arrange multiple flip cards */
 .flip-card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -864,12 +861,12 @@ padding-top: 3em;
 padding-top: 4em;
 }
 
+  /* Sets up the base styling and dimensions of the flip card, including 3D perspective */
 .flip-card {
   background-color: transparent;
   width: 31em;
   height: 18em;
   perspective: 63em; 
-
 }
 
 /* This container is needed to position the front and back side */
@@ -892,7 +889,6 @@ padding-top: 4em;
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 
@@ -979,7 +975,7 @@ padding-top: 4em;
           height: auto;
       }
       .frontpage-container p {
-        top: 84%;
+        top: 70%;
         width: 80%;
       }
 
@@ -1153,7 +1149,7 @@ padding-top: 4em;
       
       .frontpage-container p {
         font-size: 0.75rem;
-        top: 80%;
+        top: 60%;
       }
        
 }
