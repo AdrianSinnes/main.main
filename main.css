@@ -923,9 +923,17 @@ padding-top: 4em;
 
 /* Media query */
 /* Media for ultrawide screen */
+@media (min-width:2400px){
+  body{
+  font-size: 30px;
+  }
+}
 @media (min-width: 2000px) {
   .accordion-container{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid{
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -1440,11 +1448,4 @@ padding-top: 4em;
 h3.top-bird-text{
       font-size: 1.2em;
     }
-}
-
-/*Media for ultra wide screen*/
-@media (min-width:2400px){
-  body{
-  font-size: 30px;
-  }
 }
