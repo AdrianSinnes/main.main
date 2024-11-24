@@ -134,6 +134,19 @@ h2 {
     position: absolute;
     white-space: normal;
 }
+.frontpage-container p {
+  left: 0;
+  top: 54%;
+  width: 15%;
+  color: rgb(255, 255, 255);
+  padding-left: 5%;
+  padding-right: 5%;
+  position: absolute;
+  white-space: normal;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /**/
 /* Flexbox layout for the main container to arrange children horizontally */
 main {
@@ -672,11 +685,11 @@ text-decoration: none;
 }
 /* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
-  background-image: url('Images/snowowl.png');
+  background-image: url('Images/snowowl.jpg');
 }
 /* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
-  background-image: url('Images/puffin.png');
+  background-image: url('Images/puffin.jpg');
 }
 
 /* Dropdown css adjustments for activity*/
@@ -961,6 +974,10 @@ padding-top: 4em;
           width: 100%;
           height: auto;
       }
+      .frontpage-container p {
+        top: 84%;
+        width: 80%;
+      }
 
 /* Changes the width of the interest linkboxes*/
     .linkbox{
@@ -1125,6 +1142,10 @@ padding-top: 4em;
       h2{
         font-size: 1.5em;
         margin-top: 1.8em;
+      }
+      .frontpage-container p {
+        font-size: 0.75rem;
+        top: 80%;
       }
        h5{
     font-size: 2.2em;
