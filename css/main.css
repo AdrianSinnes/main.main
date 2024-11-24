@@ -607,7 +607,8 @@ text-decoration: none;
 .footer-col ul li a:hover{
   text-decoration: none;
 }
-/* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary */
+/* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary.
+   Aside to display on top instead of left*/
 .accessibility-page, .github-page{
   text-align: center;
 }
@@ -617,9 +618,6 @@ text-decoration: none;
 .accessibility-page .main-box h3, .github-page .main-box h3{
   color: white;
   font-size: 1.5em;
-}
-.accessibility-page article {
-  display: block;
 }
 .accessibility-page .main-box, .accessibility-main img, .github-page .main-box, .github-main img{
   width: 100%;
