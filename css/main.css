@@ -91,6 +91,25 @@ header{
   overflow: hidden;
   background-color: #000;
 }
+
+.frontpage-container p {
+  left: 0;
+  top: 54%;
+  width: 15%;
+  color: rgb(255, 255, 255);
+  padding-left: 5%;
+  padding-right: 5%;
+  position: absolute;
+  white-space: normal;
+  font-size: 1rem;
+  font-weight: bold;
+
+  background-color: #2d4e74;
+  margin-left: 2em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
 /* size on frontpage picture */
 .PictureFrontPage {
     width: 100%;
@@ -134,18 +153,7 @@ h2 {
     position: absolute;
     white-space: normal;
 }
-.frontpage-container p {
-  left: 0;
-  top: 54%;
-  width: 15%;
-  color: rgb(255, 255, 255);
-  padding-left: 5%;
-  padding-right: 5%;
-  position: absolute;
-  white-space: normal;
-  font-size: 1rem;
-  font-weight: bold;
-}
+
 
 /**/
 /* Flexbox layout for the main container to arrange children horizontally */
@@ -981,7 +989,7 @@ padding-top: 4em;
           height: auto;
       }
       .frontpage-container p {
-        top: 84%;
+        top: 70%;
         width: 80%;
       }
 
@@ -1125,7 +1133,7 @@ padding-top: 4em;
             font-size: 1.5em; 
         }
     
-    /*scaling footer*/
+
         .footer-col{
           flex: 1 1 100%;
           padding: 1em;
@@ -1151,7 +1159,7 @@ padding-top: 4em;
       }
       .frontpage-container p {
         font-size: 0.75rem;
-        top: 80%;
+        top: 60%;
       }
        h5{
     font-size: 2.2em;
@@ -1353,6 +1361,9 @@ padding-top: 4em;
     }
     .social-links{
       font-size: 0.7em;
+    }
+    .frontpage-container p{
+      font-size: 0.5rem;
     }
   }
   
