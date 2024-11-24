@@ -556,7 +556,7 @@ font-size: 1em;
 text-decoration: none;
 }
 .social-links a:hover{
-  color: black;
+  color: white;
   transition: 0.3s ease;
 }
 .social-links i{
@@ -922,6 +922,13 @@ padding-top: 4em;
 }
 
 /* Media query */
+/* Media for ultrawide screen */
+@media (min-width: 2000px) {
+  .accordion-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* Swtitches to 1 column when page shrinks to 1400px */
 @media (max-width: 1400px) {
@@ -967,6 +974,10 @@ padding-top: 4em;
           width: 100%;
           height: auto;
       }
+      .frontpage-container p {
+        top: 84%;
+        width: 80%;
+      }
 
 /* Changes the width of the interest linkboxes*/
     .linkbox{
@@ -981,9 +992,6 @@ padding-top: 4em;
   }
   h2{
     font-size: 2em;
-  }
-  .frontpage-container p {
-    font-size: 0.75rem;
   }
   .profile-container{
     font-size: 0.8em;
@@ -1136,8 +1144,8 @@ padding-top: 4em;
         margin-top: 1.8em;
       }
       .frontpage-container p {
+        font-size: 0.75rem;
         top: 80%;
-        width: 80%;
       }
        h5{
     font-size: 2.2em;
