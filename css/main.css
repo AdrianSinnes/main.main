@@ -168,7 +168,7 @@ main {
     background-color: rgb(255, 255, 255);
 }
 .secondary-box h3, .secondary-box p{
-  margin-left: 1.5rem;
+  margin-left: 1.5em;
 }
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
@@ -424,7 +424,7 @@ h6, .activity-page h2{
   font-weight: bold;
 }
 .text-section p {
-  font-size: 1rem;
+  font-size: 1em;
   margin-bottom: 0.1em;
   color: black;
 }
@@ -615,7 +615,8 @@ text-decoration: none;
 .footer-col ul li a:hover{
   text-decoration: none;
 }
-/* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary */
+/* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary.
+   Aside to display on top instead of left*/
 .accessibility-page, .github-page{
   text-align: center;
 }
@@ -625,9 +626,6 @@ text-decoration: none;
 .accessibility-page .main-box h3, .github-page .main-box h3{
   color: white;
   font-size: 1.5em;
-}
-.accessibility-page article {
-  display: block;
 }
 .accessibility-page .main-box, .accessibility-main img, .github-page .main-box, .github-main img{
   width: 100%;
@@ -689,15 +687,15 @@ text-decoration: none;
 /* Individual parallax images */
 /* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
 .parallax1 {
-  background-image: url('Images/fuglekikking.png'); 
+  background-image: url("../images/fuglekikking.png"); 
 }
 /* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
-  background-image: url('Images/snowowl.jpg');
+  background-image: url("../images/snowowl.jpg");
 }
 /* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
-  background-image: url('Images/puffin.jpg');
+  background-image: url("../images/puffin.jpg");
 }
 
 /* Dropdown css adjustments for activity*/
@@ -757,7 +755,7 @@ padding-top: 3em;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Makes position in center */
+  transform: translate(-50%, -50%); /* Makes position perfectly centered */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 0.5em 1em;
@@ -778,8 +776,8 @@ padding-top: 3em;
 .content-activty {
   padding: 2em;
   text-align: center;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: rgb(244,244,244);
+  color: rgb(51,51,51);
   font-size: 1.2em;
 }
 
@@ -933,7 +931,7 @@ padding-top: 4em;
 /* Media for ultrawide screen */
 @media (min-width:2400px){
   body{
-  font-size: 30px;
+  font-size: 1.875em;
   }
 }
 @media (min-width: 2000px) {
