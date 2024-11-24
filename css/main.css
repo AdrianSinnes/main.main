@@ -8,7 +8,8 @@ There are titles that explain the purpose of each section of the CSS, we have se
 The last section at the bottom of the page is all the media queries for all html files. 
 Media queries are arranged by wich html it belongs to and by scaling pixel ranges, sorted from largest to smallest. */
 
-/* css For index */
+
+/* General css */
 body, html {
   margin: 0; 
   height: 100%;
@@ -18,10 +19,12 @@ body, html {
   line-height: 1.5;
 }
 
+/* css For index */
 header{
     text-align: center;
     background-color: #3A5F88;
 }
+
 /* Navigation bar CSS*/
 .topnav ul {
   list-style-type: none; 
@@ -50,6 +53,7 @@ header{
   width: 5em;
   height: auto;
 }
+
 /* Dropdown menu. On index displayed inside the navbar. On activity page it is no navbar, only a dropdown menu.
    Css regarding functionality is mostly shared (some minor adjustments for the activity page - see activity css), while the design is different */
 
@@ -92,7 +96,6 @@ header{
   overflow: hidden;
   background-color: #000;
 }
-
 .frontpage-container p {
   left: 0;
   top: 54%;
@@ -104,7 +107,6 @@ header{
   white-space: normal;
   font-size: 1rem;
   font-weight: bold;
-
   background-color: #2d4e74;
   margin-left: 2em;
   padding: 1em;
@@ -118,7 +120,6 @@ header{
     object-fit: cover;
     display: block;
 }
-
 /* Blue overlay color at the top of the image */
 .gradient{ 
   height: 100%;
@@ -154,7 +155,6 @@ h2 {
     position: absolute;
     white-space: normal;
 }
-
 
 /* Flexbox layout for the main container to arrange children horizontally */
 main {
@@ -287,7 +287,6 @@ padding-bottom: 3em;
     display: flex;
     flex-direction: column;
 }
-
 .full-name{
     font-size:1.75em ;
     font-weight: 600;
@@ -334,7 +333,6 @@ margin-bottom: 0.6em;
   h5{
     font-size: 2.5em;
   }
-  
 
   /* creates 3 colons so the boxes will stay 4x2, also ajusting the gap between the boxes */
   .grid {
@@ -458,8 +456,6 @@ h6, .activity-page h2{
   padding: 1.25em;
   border-radius: 0.5em;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
-
-
 }
 
 .year {
@@ -605,8 +601,13 @@ text-decoration: none;
 .footer-col ul li a:hover{
   text-decoration: none;
 }
-/* Css for accessibility-page and github-page: Mostly reused css from Index. However, some minor adjustments compared to index is necessary.
-   Aside to display on top instead of left*/
+
+
+/* Css for accessibility-page and github-page: 
+
+Mostly reused css from Index. However, some minor adjustments compared to index is necessary.
+Aside to display on top instead of left*/
+
    .accessibility-page .table-container .content{
     margin-bottom: 2em;
    }
@@ -664,9 +665,7 @@ text-decoration: none;
   border-radius: 0.3em; 
 }
 
-
 /*Activity css*/
-
 
 /*Parallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
 /*Parallax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
@@ -747,7 +746,6 @@ photographer: David Heslop */
   padding-top: 3em;
 }
 
-
 /* Text overlay */
 .text-overlay .activity-page-h1,.parallax-p  {
   position: absolute;
@@ -767,9 +765,6 @@ photographer: David Heslop */
   font-size: 3em; /* Set larger font size for activity-h1 */
 }
 
-
-
-
 /* Content section between parallax 1 & 2  */
 .content-activty {
   padding: 2em;
@@ -778,7 +773,6 @@ photographer: David Heslop */
   color: rgb(51,51,51);
   font-size: 1.2em;
 }
-
 
 /* Grid container */
 .grid-container {
@@ -843,8 +837,6 @@ photographer: David Heslop */
   background-color: #342812;
   font-weight: lighter;
 }
-
-
 
 .activity-page h4{
   font-size: 2em;
@@ -928,6 +920,7 @@ padding-top: 4em;
 
 
 /* Media query */
+
 /* Media for ultrawide screen */
 @media (min-width:2400px){
   body{
@@ -1033,8 +1026,7 @@ padding-top: 4em;
         width: 31.25em;
         margin-left: 4em;
       }
-  
-}
+    }
 
 
 @media (max-width: 900px) {
@@ -1160,7 +1152,6 @@ padding-top: 4em;
         font-size: 0.75rem;
         top: 60%;
       }
-       
 }
 
 /* Table media */
@@ -1190,8 +1181,8 @@ padding-top: 4em;
   .accordion-container{
     grid-template-columns: 1fr; /* Stack columns on smaller screens */
   }
-  
 }
+
 @media (max-width: 600px){
     .linkbox{
       width: 25em;
@@ -1218,7 +1209,6 @@ padding-top: 4em;
           grid-template-columns: 1fr; 
           gap: 1em; 
       }
-      
       label {
           font-size: 1em; 
           padding-top: 1em;
@@ -1323,17 +1313,20 @@ padding-top: 4em;
       gap: 2em; 
     }
   }
+
 @media (max-width: 767px){
   /*accordion container*/
   .accessibility-page .accordion-container {
     gap: 1.5em;
   }
   }
+
 @media (max-width: 650px){
   .accessibility-page .accordion-container {
     grid-template-columns: 1fr; /* Stack columns on smaller screens */
   }
 }
+
   /*scaling 574px drop down boxes*/
 @media (max-width:574px){
 /*accordion container*/
@@ -1343,7 +1336,6 @@ padding-top: 4em;
   }
 }     
   
-
 /*only Media for GitHub page*/
 @media (max-width: 1200px) {
   .github-page .accordion-container {
@@ -1375,6 +1367,7 @@ padding-top: 4em;
    font-size: 2em;
   }
 }
+
 @media (max-width: 650px) {
   .github-page .accordion-container {
    grid-template-columns: 1fr; /* Stack columns on smaller screens */
@@ -1405,8 +1398,6 @@ padding-top: 4em;
     font-size: 1em;
   } 
 }
-
-
 
 /*only Media for activity page*/
 @media(max-device-width: 1366px) {
