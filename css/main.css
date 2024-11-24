@@ -122,7 +122,7 @@ h1 {
     white-space: normal;
 }
 
-/* Style for h2, size, pisition and color */
+/* Style for h2, size, position and color */
 h2 {
     top: 4em;
     left: 0;
@@ -755,7 +755,7 @@ padding-top: 3em;
   padding: 0.5em 1em;
   border-radius: 0.5em; /*Makes round corners*/
   text-align: center; /* Centered text*/
-  margin: 0;
+  margin: 0; /* Removes default margin*/ 
   font-size: 1.8em; /* p text size */
 }
 
