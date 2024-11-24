@@ -681,15 +681,15 @@ text-decoration: none;
 /* Individual parallax images */
 /* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
 .parallax1 {
-  background-image: url('images/fuglekikking.png'); 
+  background-image: url("../images/fuglekikking.png"); 
 }
 /* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
-  background-image: url('images/snowowl.jpg');
+  background-image: url("../images/snowowl.jpg");
 }
 /* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
-  background-image: url('images/puffin.jpg');
+  background-image: url("../images/puffin.jpg");
 }
 
 /* Dropdown css adjustments for activity*/
