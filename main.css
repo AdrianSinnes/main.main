@@ -1434,3 +1434,9 @@ h3.top-bird-text{
     }
 }
 
+/*Media for ultra wide screen*/
+@media (min-width:2400px){
+  body{
+  font-size: 30px;
+  }
+}
