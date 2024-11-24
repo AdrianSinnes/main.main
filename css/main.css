@@ -685,15 +685,18 @@ text-decoration: none;
 }
 
 /* Individual parallax images */
-/* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
+/* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms 
+photographer: Annie Spratt */
 .parallax1 {
   background-image: url("../images/fuglekikking.png"); 
 }
-/* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
+/* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc 
+photographer: Todd Steitle */
 .parallax2 {
   background-image: url("../images/snowowl.jpg");
 }
-/* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
+/* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE 
+photographer: David Heslop */
 .parallax3 {
   background-image: url("../images/puffin.jpg");
 }
@@ -754,8 +757,8 @@ padding-top: 3em;
 .text-overlay .activity-page-h1,.parallax-p  {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Makes position perfectly centered */
+  left: 50%; /*Top & left combination makes the top left corner of the element centered */
+  transform: translate(-50%, -50%); /*This shifts the elemets center be in the middle, making the element perfectly centered   */
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 0.5em 1em;
