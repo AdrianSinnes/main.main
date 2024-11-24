@@ -134,6 +134,19 @@ h2 {
     position: absolute;
     white-space: normal;
 }
+.frontpage-container p {
+  left: 0;
+  top: 54%;
+  width: 15%;
+  color: rgb(255, 255, 255);
+  padding-left: 5%;
+  padding-right: 5%;
+  position: absolute;
+  white-space: normal;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /**/
 /* Flexbox layout for the main container to arrange children horizontally */
 main {
@@ -543,7 +556,7 @@ font-size: 1em;
 text-decoration: none;
 }
 .social-links a:hover{
-  color: black;
+  color: white;
   transition: 0.3s ease;
 }
 .social-links i{
@@ -668,15 +681,15 @@ text-decoration: none;
 /* Individual parallax images */
 /* image source: https://unsplash.com/photos/a-man-taking-a-picture-of-a-body-of-water-YRfoXTJi4Ms */
 .parallax1 {
-  background-image: url('Images/fuglekikking.png'); 
+  background-image: url('images/fuglekikking.png'); 
 }
 /* image source: https://unsplash.com/photos/photo-of-flying-owl-ExnAdmi-Asc */
 .parallax2 {
-  background-image: url('Images/snowowl.jpg');
+  background-image: url('images/snowowl.jpg');
 }
 /* image soruce: https://unsplash.com/photos/three-white-and-black-puffin-birds-on-a-rock-aYgXYoAjacE */
 .parallax3 {
-  background-image: url('Images/puffin.jpg');
+  background-image: url('images/puffin.jpg');
 }
 
 /* Dropdown css adjustments for activity*/
@@ -909,6 +922,21 @@ padding-top: 4em;
 }
 
 /* Media query */
+/* Media for ultrawide screen */
+@media (min-width:2400px){
+  body{
+  font-size: 30px;
+  }
+}
+@media (min-width: 2000px) {
+  .accordion-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* Swtitches to 1 column when page shrinks to 1400px */
 @media (max-width: 1400px) {
@@ -953,6 +981,10 @@ padding-top: 4em;
       .secondary-box,.main-box{
           width: 100%;
           height: auto;
+      }
+      .frontpage-container p {
+        top: 84%;
+        width: 80%;
       }
 
 /* Changes the width of the interest linkboxes*/
@@ -1118,6 +1150,10 @@ padding-top: 4em;
       h2{
         font-size: 1.5em;
         margin-top: 1.8em;
+      }
+      .frontpage-container p {
+        font-size: 0.75rem;
+        top: 80%;
       }
        h5{
     font-size: 2.2em;
@@ -1413,4 +1449,3 @@ h3.top-bird-text{
       font-size: 1.2em;
     }
 }
-
