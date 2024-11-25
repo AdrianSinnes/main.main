@@ -6,7 +6,7 @@
 
 There are titles that explain the purpose of each section of the CSS, we have sections for each html.
 The last section at the bottom of the page is all the media queries for all html files. 
-Media queries are arranged by wich html it belongs to and by scaling pixel ranges, sorted from largest to smallest. */
+Media queries are arranged by which html it belongs to and by scaling pixel ranges, sorted from largest to smallest. */
 
 
 /* General css */
@@ -24,7 +24,19 @@ header, .dropdown-content, .main-box, .footer {
   }
 
 
+
+/* White colored text */
+.historyButton, .year, th, .social-links a:hover, .newsletter .footer-heading
+, .accessibility-page .main-box h3, .github-page .main-box h3, .activity-page .dropbtn,
+ .activity-page .dropdown-content a, .text-overlay .activity-page-h1,.parallax-p, .flex-container
+{  
+color: white;
+}
+
+
+
 /* css For index */
+
 header{
     text-align: center;
 }
@@ -424,7 +436,6 @@ h6, .activity-page h2{
 .historyButton {
   padding: 2%;
   background-color:black;
-  color: white;
   border-radius: 0.3em;
   cursor: pointer;
   font-size: 1em;
@@ -462,7 +473,6 @@ h6, .activity-page h2{
 
 .year {
   background-color: #2980b9;
-  color: white;
   padding: 0.6em;
   margin-top: 1.25em;
   font-size: 1.25em;
@@ -496,7 +506,6 @@ th, td {
 
 th {
   background-color: #2980b9;
-  color: white;
 }
 
 .subject-title {
@@ -551,7 +560,6 @@ font-size: 1em;
 text-decoration: none;
 }
 .social-links a:hover{
-  color: white;
   transition: 0.3s ease;
 }
 .social-links i{
@@ -588,9 +596,7 @@ text-decoration: none;
     font-size: 1.2em;
     margin-bottom: 0.6em;
 }
-.newsletter .footer-heading {
-  color: white;
-}
+
 .footer-col ul li a{
     font-size: 1em;
     color: #FFDA00;
@@ -620,7 +626,6 @@ Aside to display on top instead of left*/
   font-size: 2em;
 }
 .accessibility-page .main-box h3, .github-page .main-box h3{
-  color: white;
   font-size: 1.5em;
 }
 .accessibility-page .main-box, .accessibility-main img, .github-page .main-box, .github-main img{
@@ -700,7 +705,6 @@ photographer: David Heslop */
 .activity-page .dropbtn {
   background: rgba(0, 0, 0, 0.5);
   min-width: 7.5em;
-  color: white;
 }
 .activity-page .dropdown {
   position: fixed; /* Dropdown menu sticks to the top of the page*/
@@ -714,7 +718,6 @@ photographer: David Heslop */
   display: block;
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
-  color: white;
 }
 .activity-page .dropdown-content a:hover, .activity-page .dropdown:hover .dropbtn {
   background-color: #00000057;
@@ -753,7 +756,6 @@ photographer: David Heslop */
   top: 50%;
   left: 50%; /*Top & left combination makes the top left corner of the element centered */
   transform: translate(-50%, -50%); /*This shifts the elemets center be in the middle, making the element perfectly centered   */
-  color: white;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 0.5em 1em;
   border-radius: 0.5em; 
@@ -824,7 +826,6 @@ photographer: David Heslop */
   gap: 4em; /* Avstand mellom boksene */
   max-width: 50em;
   margin: 0 auto; /* Sentrer containeren på siden */
-  color: white;
   padding-top: 4em;
   padding-bottom: 4em;
   padding-left: 2em;
