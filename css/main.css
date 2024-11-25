@@ -37,7 +37,7 @@ header{
 }
 .topnav li a{
   min-width: 5em;
-  display: block; /* Horizontal navbar */
+  display: block; 
   color: #FFDA00;
   text-align: center;
   padding: 1.32em 1em;
