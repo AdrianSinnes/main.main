@@ -746,7 +746,7 @@ photographer: David Heslop */
 
 .activity-page h3{
   font-size: 2em;
-  margin-left: 2em;
+  margin-left: 1em;
   padding-top: 3em;
 }
 
@@ -923,7 +923,7 @@ padding-top: 4em;
 
 /* Media query */
 
-/* Media for ultrawide screen */
+/* Media for ultrawide screen 21:9 */
 @media (min-width:2400px){
   body{
   font-size: 1.875em;
