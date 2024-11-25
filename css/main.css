@@ -664,6 +664,9 @@ Aside to display on top instead of left*/
   padding: 0.625em;
   border-radius: 0.3em; 
 }
+.github-main article{
+  padding-bottom: 3em;
+}
 
 /*Activity css*/
 
@@ -926,6 +929,10 @@ padding-top: 4em;
   body{
   font-size: 1.875em;
   }
+  .frontpage-container p{
+    font-size: 1.3em;
+  width: 25%;
+  }
 }
 @media (min-width: 2000px) {
   .accordion-container{
@@ -1132,7 +1139,7 @@ padding-top: 4em;
     margin-left: 1em;
       }
         .footer-col{
-          flex: 1 1 100%;
+          flex: 1 1 100%;/*The element is flexible allowing it to start in full witdh, but grow or shrink*/
           padding: 1em;
           width: 100%;
           margin-bottom: 1.8em;
@@ -1153,6 +1160,7 @@ padding-top: 4em;
         top: 60%;
       }
 }
+
 
 /* Table media */
 @media (max-width: 650px) {
