@@ -1203,6 +1203,9 @@ padding-top: 4em;
     font-size: 1em;
     margin-top: 3em;
   }
+  .profile-container{
+    margin-left: 2em;
+  }
 }
 
 /*scaling 574px drop down boxes*/
