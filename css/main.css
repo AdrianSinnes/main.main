@@ -1473,7 +1473,7 @@ padding-top: 4em;
  @media (max-width:480px){
   /*Scalling parallax text */
   .parallax-p {
-    font-size: 1em; 
+    font-size: 1.2em; 
     padding: 0.3em 0.6em; 
     line-height: 1.2; 
   }
