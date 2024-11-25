@@ -187,7 +187,7 @@ main {
     height: auto;
 }
 .secondary-box h3, .secondary-box p{
-  margin-left: 1.5em;
+  margin-left: 1.5rem; /* rem instead of em for correct alignment */
 }
 /* Styling for the main box with width, height, background, and padding */
 .main-box {
