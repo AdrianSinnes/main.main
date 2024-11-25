@@ -23,7 +23,10 @@ header, .dropdown-content, .main-box, .footer {
   background-color: #3A5F88;
   }
 
-
+/* Navbar & footer text color */  
+.topnav li a, .dropbtn, .dropdown-content, .footer, .social-links a, .footer-col ul li a {
+    color: #FFDA00;
+    }
 
 /* White colored text */
 .historyButton, .year, th, .social-links a:hover, .newsletter .footer-heading
@@ -54,7 +57,6 @@ header{
 .topnav li a{
   min-width: 5em;
   display: block; 
-  color: #FFDA00;
   text-align: center;
   padding: 1.32em 1em;
   text-decoration: none;
@@ -78,7 +80,6 @@ header{
   font-size: 1em;
   border: none;
   outline: none;
-  color: #FFDA00;
   padding: 1.5em 1em;
   background-color: inherit;
   min-width: 11.71em;
@@ -88,7 +89,6 @@ header{
   box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.2);
   z-index: 1;
   position: absolute;
-  color: #FFDA00;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -520,7 +520,6 @@ th {
 .footer{
     font-size: 1em;
     padding: 3.125em;
-    color: #FFDA00;
 }
 .newsletter{
     display: flex;
@@ -555,7 +554,6 @@ th {
     padding: 0.625em;
 }
 .social-links a {
-color: #FFDA00;
 font-size: 1em;
 text-decoration: none;
 }
@@ -599,7 +597,6 @@ text-decoration: none;
 
 .footer-col ul li a{
     font-size: 1em;
-    color: #FFDA00;
     display: block;
     transition: all 0.3s ease;
     padding: 0.6em;
