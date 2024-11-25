@@ -18,10 +18,17 @@ body, html {
   color:#000;
   line-height: 1.5;
 }
+
 /* Primary Backround Color */
 header, .dropdown-content, .main-box, .footer {
   background-color: #3A5F88;
   }
+
+/* Backround color White */
+.secondary-box, .linkbox, .table-container{
+  background-color: white;
+}
+
 
 /* Navbar & footer text color */  
 .topnav li a, .dropbtn, .dropdown-content, .footer, .social-links a, .footer-col ul li a {
@@ -35,8 +42,6 @@ header, .dropdown-content, .main-box, .footer {
 {  
 color: white;
 }
-
-
 
 /* css For index */
 
@@ -180,7 +185,6 @@ main {
 .secondary-box {
     width: 20%;
     height: auto;
-    background-color: rgb(255, 255, 255);
 }
 .secondary-box h3, .secondary-box p{
   margin-left: 1.5em;
@@ -363,7 +367,6 @@ margin-bottom: 0.6em;
     width: 15.6em;
     display: block;
     padding: 1em;
-    background-color: #ffffff;
     border: 0.5em solid #d1ebdb;
     border-radius: 0.5em;
     text-align: left;
@@ -431,8 +434,6 @@ h6, .activity-page h2{
   color: black;
 }
 
-
-
 .historyButton {
   padding: 2%;
   background-color:black;
@@ -465,7 +466,6 @@ h6, .activity-page h2{
 .table-container {
   width: 90%;
   margin: 1.25em auto;
-  background-color: white;
   padding: 1.25em;
   border-radius: 0.5em;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
@@ -674,7 +674,7 @@ Aside to display on top instead of left*/
 /*Activity css*/
 
 /*Parallax code found here: https://www.w3schools.com/howto/howto_css_parallax.asp */
-/*Parallax makes the backround content (often a image) move at a diffrent speed than the foreground content while scrolling */
+/*Parallax makes the background content (often a image) move at a diffrent speed than the foreground content while scrolling */
 .parallax {
   height: 100%; /* Full height */
   background-attachment: fixed;
