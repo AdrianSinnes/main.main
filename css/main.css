@@ -18,11 +18,15 @@ body, html {
   color:#000;
   line-height: 1.5;
 }
+/* Primery Backround Color */
+header, .dropdown-content, .main-box, .footer {
+  background-color: #3A5F88;
+  }
+
 
 /* css For index */
 header{
     text-align: center;
-    background-color: #3A5F88;
 }
 
 /* Navigation bar CSS*/
@@ -71,7 +75,6 @@ header{
   display: none; /* Hides the content */
   box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.2);
   z-index: 1;
-  background-color: #3A5F88;
   position: absolute;
   color: #FFDA00;
 }
@@ -174,7 +177,6 @@ main {
 .main-box {
     width: 80%; 
     height: auto; 
-    background-color: #3A5F88;
     padding: 1.25em; 
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
@@ -509,7 +511,6 @@ th {
 .footer{
     font-size: 1em;
     padding: 3.125em;
-    background-color: #3A5F88;
     color: #FFDA00;
 }
 .newsletter{
