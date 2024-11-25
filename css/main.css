@@ -754,8 +754,8 @@ photographer: David Heslop */
 .text-overlay .activity-page-h1,.parallax-p  {
   position: absolute;
   top: 50%;
-  left: 50%; /*Top & left combination makes the top left corner of the element centered */
-  transform: translate(-50%, -50%); /*This shifts the elemets center be in the middle, making the element perfectly centered   */
+  left: 50%; /*Top & left combination makes the top left corner of the element centered*/
+  transform: translate(-50%, -50%); /*This aligns the elements center with the center of the container*/
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 0.5em 1em;
   border-radius: 0.5em; 
@@ -823,9 +823,9 @@ photographer: David Heslop */
 .flex-container {
   display: flex;
   flex-direction: column;
-  gap: 4em; /* Avstand mellom boksene */
+  gap: 4em; 
   max-width: 50em;
-  margin: 0 auto; /* Sentrer containeren på siden */
+  margin: 0 auto; /* Center the containers */
   padding-top: 4em;
   padding-bottom: 4em;
   padding-left: 2em;
@@ -1473,7 +1473,7 @@ padding-top: 4em;
  @media (max-width:480px){
   /*Scalling parallax text */
   .parallax-p {
-    font-size: 1.2em; 
+    font-size: 1em; 
     padding: 0.3em 0.6em; 
     line-height: 1.2; 
   }
