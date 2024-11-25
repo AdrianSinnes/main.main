@@ -943,7 +943,6 @@ padding-top: 4em;
   }
 }
 
-/* Swtitches to 1 column when page shrinks to 1400px */
 @media (max-width: 1400px) {
   .accordion-container{
     display: grid;
@@ -1134,8 +1133,8 @@ padding-top: 4em;
             font-size: 1.5em; 
         }
         h5{
-    font-size: 2.2em;
-    margin-left: 1em;
+         font-size: 2.2em;
+         margin-left: 1em;
       }
         .footer-col{
           flex: 1 1 100%;/*The element is flexible allowing it to start in full witdh, but grow or shrink*/
@@ -1208,7 +1207,7 @@ padding-top: 4em;
   }
 }
 
-/*scaling 574px drop down boxes*/
+
 @media (max-width:574px){
 
   .topnav .dropdown-content a{
@@ -1303,6 +1302,10 @@ padding-top: 4em;
     }
     .social-links{
       font-size: 0.7em;
+    }
+    .frontpage-container p{
+      top: 65%;
+      font-size: 0.5em;
     }
   }
 
